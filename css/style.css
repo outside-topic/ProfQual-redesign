@@ -2,7 +2,8 @@
         :root {
             --primary: #2A2771;
             --secondary: #ed2024;
-            --accent: #D4AF37;
+            --accent: #ed2037;
+            --accent2 : #ed222e;
             --highlight: #2563EB;
             --success: #22C55E;
             --bg: #F8FAFC;
@@ -113,7 +114,7 @@
         }
 
         .btn-accent {
-            background: linear-gradient(135deg, var(--accent), #c9a22e);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
             color: var(--primary);
             font-family: var(--font-heading);
             font-weight: 600;
@@ -315,7 +316,7 @@
         }
 
         .navbar-cta {
-            background: linear-gradient(135deg, var(--accent), #c9a22e);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
             color: var(--primary) !important;
             font-family: var(--font-heading);
             font-weight: 600;
@@ -464,7 +465,7 @@
         }
 
         .hero-title .highlight {
-            background: linear-gradient(135deg, var(--accent), #f0d060);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -1385,7 +1386,7 @@
             width: 120px;
             height: 120px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), #c9a22e);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -1521,7 +1522,7 @@
         }
 
         .btn-accent-lg {
-            background: linear-gradient(135deg, var(--accent), #c9a22e);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
             color: var(--primary);
             font-family: var(--font-heading);
             font-weight: 700;
@@ -1690,7 +1691,7 @@
         }
 
         .newsletter-form button:hover {
-            background: #c9a22e;
+            background: var(--accent2);
             transform: translateY(-50%) scale(1.05);
         }
 
@@ -1724,7 +1725,7 @@
             width: 48px;
             height: 48px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent), #c9a22e);
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
             color: var(--primary);
             border: none;
             display: flex;
