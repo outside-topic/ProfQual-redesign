@@ -233,13 +233,18 @@ function updateCarousel() {
     showPage(currentPage);
 }
 
-prevBtn.addEventListener('click', () => {
-    showPage(currentPage - 1);
-});
+if(prevBtn){
+    prevBtn.addEventListener('click', () => {
+        showPage(currentPage - 1);
+    });
+}
 
-nextBtn.addEventListener('click', () => {
-    showPage(currentPage + 1);
-});
+if(nextBtn){
+
+    nextBtn.addEventListener('click', () => {
+        showPage(currentPage + 1);
+    });
+}
 
 dots.forEach(dot => {
     dot.addEventListener('click', () => {
@@ -307,7 +312,30 @@ window.addEventListener('load', () => {
 
 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.featureSwiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    },
+});
+
+new Swiper('.testimonialSwiper', {
     // Optional parameters
     direction: 'horizontal',
     slidesPerView: 3,
