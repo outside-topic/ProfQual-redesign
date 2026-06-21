@@ -27,6 +27,9 @@
 }
 
 /* ===== BASE & RESET ===== */
+
+
+
 *,
 *::before,
 *::after {
@@ -38,7 +41,9 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
+    overflow-x: hidden;
 }
+
 
 body {
     font-family: var(--font-body);
@@ -375,6 +380,7 @@ img {
 .offcanvas {
     background: var(--dark) !important;
     max-width: 320px;
+    height: 900px;
 }
 
 .offcanvas .nav-link-custom {
@@ -394,7 +400,7 @@ img {
 /* ===== HERO SECTION ===== */
 .hero-section {
     min-height: 100vh;
-    background: linear-gradient(160deg, var(--primary) 0%, #0d2847 40%, var(--secondary) 100%);
+    background: linear-gradient(160deg, var(--primary) 0%, #0d2847 70%, var(--secondary)100%);
     position: relative;
     display: flex;
     align-items: center;
@@ -2185,4 +2191,21 @@ img {
 
 .banner_next_card{
     padding: 80px 0px;
+}
+
+.offcanvas-body{
+    height: auto;
+}
+
+
+
+.custom{
+    border: 1px solid var(--accent2);
+    padding: 10px 20px;
+    border-radius: 15px;
+
+    i{
+        color: var(--accent2);
+        
+    }
 }

@@ -314,23 +314,34 @@ const swiper = new Swiper('.swiper', {
     loop: true,
     spaceBetween: 30,
     autoplay: {
-        delay: 3000, 
+        delay: 3000,
         disableOnInteraction: false,
     },
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        }
     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
