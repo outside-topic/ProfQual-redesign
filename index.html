@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ProfQual - UK-Based Qualification Awarding Body setting global standards in professional qualifications, accreditation, and certification.">
+    <meta name="keywords" content="ProfQual, UK qualifications, awarding body, accreditation, professional certification, global recognition">
+    <meta name="author" content="ProfQual">
+    <title>ProfQual — Setting Global Standards in Professional Qualifications</title>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="ProfQual — Setting Global Standards in Professional Qualifications">
+    <meta property="og:description" content="UK-Based Qualification Awarding Body. Trusted by 2500+ centres across 120+ countries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.profqual.org.uk">
+    <meta property="og:image" content="https://www.profqual.org.uk/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProfQual — Global Professional Qualifications">
+    <meta name="twitter:description" content="UK-Based Awarding Body. 500K+ certified learners worldwide.">
+
+    <!-- CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar-profqual" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                <!-- Logo -->
+                <a class="navbar-brand-custom" href="#" aria-label="ProfQual Home">
+                    Prof<span>Qual</span>
+                </a>
+
+                <!-- Desktop Nav -->
+                <div class="d-none d-lg-flex align-items-center gap-1">
+                    <a class="nav-link-custom active" href="#home">Home</a>
+                    <a class="nav-link-custom" href="#qualifications">Qualifications</a>
+                    <a class="nav-link-custom" href="#accreditation">Accreditation</a>
+                    <a class="nav-link-custom" href="#centres">Approved Centres</a>
+                    <a class="nav-link-custom" href="#about">About Us</a>
+                    <a class="nav-link-custom" href="#contact">Contact</a>
+                </div>
+
+                <!-- CTA + Mobile Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#contact" class="navbar-cta d-none d-md-inline-flex">
+                        Get Accredited
+                    </a>
+                    <button class="d-lg-none border-0 bg-transparent text-white fs-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="mobileMenuLabel">Prof<span style="color: var(--accent);">Qual</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-column">
+                    <a class="nav-link-custom" href="#home" data-bs-dismiss="offcanvas">Home</a>
+                    <a class="nav-link-custom" href="#qualifications" data-bs-dismiss="offcanvas">Qualifications</a>
+                    <a class="nav-link-custom" href="#accreditation" data-bs-dismiss="offcanvas">Accreditation</a>
+                    <a class="nav-link-custom" href="#centres" data-bs-dismiss="offcanvas">Approved Centres</a>
+                    <a class="nav-link-custom" href="#about" data-bs-dismiss="offcanvas">About Us</a>
+                    <a class="nav-link-custom" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+                    <a href="#contact" class="navbar-cta text-center mt-4" data-bs-dismiss="offcanvas">Get Accredited</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero-section" id="home" aria-label="Hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-grid-pattern"></div>
+            <canvas id="heroParticles"></canvas>
+
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row align-items-center">
+                    <!-- Left Content -->
+                    <div class="col-lg-6">
+                        <div class="hero-badge reveal">
+                            <i class="bi bi-globe2"></i>
+                            Trusted by Institutions Worldwide
+                        </div>
+                        <h1 class="hero-title reveal stagger-1">
+                            Setting Global Standards in <span class="highlight">Professional Qualifications</span>
+                        </h1>
+                        <p class="hero-desc reveal stagger-2">
+                            Empowering learners and institutions with UK-regulated qualifications that are recognised, respected, and relevant across 120+ countries.
+                        </p>
+                        <div class="hero-btns reveal stagger-3">
+                            <a href="#qualifications" class="btn-accent">
+                                Explore Qualifications <i class="bi bi-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#accreditation" class="btn-outline-light">
+                                Become a Centre
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right - 3D Floating Dashboard -->
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="hero-dashboard reveal-scale stagger-2">
+                            <!-- Main Dashboard Card -->
+                            <div class="dashboard-main">
+                                <div class="dash-header">
+                                    <span>Accreditation Dashboard</span>
+                                    <div class="live-dot"></div>
+                                </div>
+                                <div class="dash-stat-row">
+                                    <span class="dash-stat-label">Certified Learners</span>
+                                    <span class="dash-stat-value">524,300</span>
+                                </div>
+                                <div class="dash-bar"><div class="dash-bar-fill gold" style="width: 85%;"></div></div>
+
+                                <div class="dash-stat-row mt-3">
+                                    <span class="dash-stat-label">Global Centres</span>
+                                    <span class="dash-stat-value">2,547</span>
+                                </div>
+                                <div class="dash-bar"><div class="dash-bar-fill blue" style="width: 72%;"></div></div>
+
+                                <div class="dash-stat-row mt-3">
+                                    <span class="dash-stat-label">Pass Rate</span>
+                                    <span class="dash-stat-value">98.2%</span>
+                                </div>
+                                <div class="dash-bar"><div class="dash-bar-fill green" style="width: 98%;"></div></div>
+                            </div>
+
+                            <!-- Floating Card 1 -->
+                            <div class="float-card float-card-1">
+                                <div class="fc-icon gold-bg"><i class="bi bi-trophy"></i></div>
+                                <div class="fc-value">120+</div>
+                                <div class="fc-label">Countries</div>
+                            </div>
+
+                            <!-- Floating Card 2 -->
+                            <div class="float-card float-card-2">
+                                <div class="fc-icon blue-bg"><i class="bi bi-graph-up-arrow"></i></div>
+                                <div class="fc-value">+34%</div>
+                                <div class="fc-label">YoY Growth</div>
+                            </div>
+
+                            <!-- Floating Card 3 -->
+                            <div class="float-card float-card-3">
+                                <div class="fc-icon green-bg"><i class="bi bi-patch-check"></i></div>
+                                <div class="fc-value">UK Reg.</div>
+                                <div class="fc-label">Ofqual Aligned</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TRUST METRICS ===== -->
+        <section class="trust-section" aria-label="Trust Metrics">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-6 col-lg-3">
+                        <div class="metric-card reveal stagger-1">
+                            <div class="metric-icon mi-1"><i class="bi bi-mortarboard"></i></div>
+                            <div class="metric-number" data-target="500000" data-suffix="K+">0</div>
+                            <div class="metric-label">Certified Learners</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="metric-card reveal stagger-2">
+                            <div class="metric-icon mi-2"><i class="bi bi-globe-americas"></i></div>
+                            <div class="metric-number" data-target="120" data-suffix="+">0</div>
+                            <div class="metric-label">Countries</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="metric-card reveal stagger-3">
+                            <div class="metric-icon mi-3"><i class="bi bi-building"></i></div>
+                            <div class="metric-number" data-target="2500" data-suffix="+">0</div>
+                            <div class="metric-label">Approved Centres</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <div class="metric-card reveal stagger-4">
+                            <div class="metric-icon mi-4"><i class="bi bi-emoji-smile"></i></div>
+                            <div class="metric-number" data-target="98" data-suffix="%">0</div>
+                            <div class="metric-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== GLOBAL RECOGNITION ===== -->
+        <section class="recognition-section" id="about" aria-label="Global Recognition">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Globe -->
+                    <div class="col-lg-5 reveal-left">
+                        <div class="globe-container">
+                            <svg class="globe-svg" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <radialGradient id="globeGradient" cx="50%" cy="50%" r="50%">
+                                        <stop offset="0%" style="stop-color: #2563EB; stop-opacity: 0.3" />
+                                        <stop offset="100%" style="stop-color: #2563EB; stop-opacity: 0" />
+                                    </radialGradient>
+                                </defs>
+                                <!-- Center Glow -->
+                                <circle class="globe-center-glow" cx="250" cy="250" r="200" />
+
+                                <!-- Concentric Rings -->
+                                <circle class="globe-ring" cx="250" cy="250" r="60" />
+                                <circle class="globe-ring" cx="250" cy="250" r="110" />
+                                <circle class="globe-ring" cx="250" cy="250" r="160" />
+                                <circle class="globe-ring" cx="250" cy="250" r="210" />
+
+                                <!-- Cross Lines -->
+                                <line class="globe-ring" x1="40" y1="250" x2="460" y2="250" />
+                                <line class="globe-ring" x1="250" y1="40" x2="250" y2="460" />
+                                <line class="globe-ring" x1="100" y1="100" x2="400" y2="400" />
+                                <line class="globe-ring" x1="400" y1="100" x2="100" y2="400" />
+
+                                <!-- Connection Lines -->
+                                <line class="globe-line" x1="160" y1="170" x2="320" y2="200" />
+                                <line class="globe-line" x1="320" y1="200" x2="350" y2="310" />
+                                <line class="globe-line" x1="250" y1="250" x2="160" y2="170" />
+                                <line class="globe-line" x1="250" y1="250" x2="180" y2="350" />
+                                <line class="globe-line" x1="180" y1="350" x2="350" y2="310" />
+
+                                <!-- Location Dots -->
+                                <circle class="globe-dot" cx="160" cy="170" r="4" />
+                                <circle class="globe-dot-accent" cx="320" cy="200" r="4" />
+                                <circle class="globe-dot" cx="350" cy="310" r="4" />
+                                <circle class="globe-dot-accent" cx="250" cy="250" r="5" />
+                                <circle class="globe-dot" cx="180" cy="350" r="4" />
+                                <circle class="globe-dot" cx="130" cy="280" r="3" />
+                                <circle class="globe-dot-accent" cx="380" cy="250" r="3" />
+                                <circle class="globe-dot" cx="200" cy="130" r="3" />
+                                <circle class="globe-dot" cx="310" cy="140" r="3" />
+                                <circle class="globe-dot-accent" cx="280" cy="380" r="3" />
+
+                                <!-- Outer ring highlight -->
+                                <circle cx="250" cy="250" r="220" fill="none" stroke="rgba(212,175,55,0.15)" stroke-width="1.5" stroke-dasharray="8 8" style="animation: dashMove 25s linear infinite reverse;" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-7 reveal-right">
+                        <div class="section-badge mb-3">
+                            <i class="bi bi-shield-check"></i>
+                            Global Recognition
+                        </div>
+                        <h2 class="section-title">Internationally Recognised Qualifications</h2>
+                        <p class="section-desc mb-4">
+                            Our qualifications are designed to meet the highest standards, ensuring learners and institutions gain credentials that are valued worldwide.
+                        </p>
+
+                        <div class="recognition-item">
+                            <div class="ri-icon"><i class="bi bi-flag"></i></div>
+                            <div>
+                                <h5>UK Qualification Standards</h5>
+                                <p>Aligned with Ofqual's Regulated Qualifications Framework (RQF), ensuring rigorous quality and consistency.</p>
+                            </div>
+                        </div>
+                        <div class="recognition-item">
+                            <div class="ri-icon"><i class="bi bi-globe"></i></div>
+                            <div>
+                                <h5>Global Acceptance</h5>
+                                <p>Recognised by employers, universities, and professional bodies across 120+ countries and territories.</p>
+                            </div>
+                        </div>
+                        <div class="recognition-item">
+                            <div class="ri-icon"><i class="bi bi-clipboard-check"></i></div>
+                            <div>
+                                <h5>Quality Assurance</h5>
+                                <p>Robust assessment and moderation processes that maintain the integrity of every qualification awarded.</p>
+                            </div>
+                        </div>
+                        <div class="recognition-item">
+                            <div class="ri-icon"><i class="bi bi-diagram-3"></i></div>
+                            <div>
+                                <h5>Industry Alignment</h5>
+                                <p>Curriculum developed in partnership with industry experts to ensure real-world relevance and applicability.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== QUALIFICATION CATEGORIES ===== -->
+        <section class="qual-section" id="qualifications" aria-label="Qualification Categories">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-badge reveal mb-3">
+                        <i class="bi bi-grid-3x3-gap"></i>
+                        Qualifications
+                    </div>
+                    <h2 class="section-title reveal stagger-1">Explore Our Qualification Categories</h2>
+                    <p class="section-desc mx-auto reveal stagger-2">
+                        From business management to cyber security, our portfolio covers the skills that matter in today's global economy.
+                    </p>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- Business Management (span 2) -->
+                    <div class="bento-item span-2 reveal stagger-1">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="bento-icon bi-gold"><i class="bi bi-briefcase"></i></div>
+                            <div>
+                                <h4>Business Management</h4>
+                                <p>Comprehensive qualifications covering strategic planning, organisational leadership, operations management, and enterprise development at Levels 3 to 7.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="bento-link">Explore Programmes <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Health & Social Care -->
+                    <div class="bento-item reveal stagger-2">
+                        <div class="bento-icon bi-rose"><i class="bi bi-heart-pulse"></i></div>
+                        <h4>Health &amp; Social Care</h4>
+                        <p>Professional qualifications for healthcare workers, social care practitioners, and community support specialists.</p>
+                        <a href="#" class="bento-link">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Education & Training -->
+                    <div class="bento-item reveal stagger-3">
+                        <div class="bento-icon bi-blue"><i class="bi bi-book"></i></div>
+                        <h4>Education &amp; Training</h4>
+                        <p>Enable educators with teaching qualifications, assessment skills, and curriculum design expertise.</p>
+                        <a href="#" class="bento-link">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <!-- IT & Cyber Security (span 2) -->
+                    <div class="bento-item span-2 reveal stagger-4">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div class="bento-icon bi-purple"><i class="bi bi-shield-lock"></i></div>
+                            <div>
+                                <h4>IT &amp; Cyber Security</h4>
+                                <p> cutting-edge qualifications in network security, ethical hacking, data protection, cloud computing, and digital infrastructure management.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="bento-link">Explore Programmes <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Leadership -->
+                    <div class="bento-item reveal stagger-5">
+                        <div class="bento-icon bi-gold"><i class="bi bi-people"></i></div>
+                        <h4>Leadership</h4>
+                        <p>Develop strategic leadership capabilities for senior professionals across all industries.</p>
+                        <a href="#" class="bento-link">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Project Management -->
+                    <div class="bento-item reveal stagger-6">
+                        <div class="bento-icon bi-teal"><i class="bi bi-kanban"></i></div>
+                        <h4>Project Management</h4>
+                        <p>From Agile to PRINCE2 methodologies, gain certified project management competencies.</p>
+                        <a href="#" class="bento-link">Explore <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== WHY CHOOSE PROFQUAL ===== -->
+        <section class="why-section" aria-label="Why Choose ProfQual">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-badge reveal mb-3">
+                        <i class="bi bi-star"></i>
+                        Why ProfQual
+                    </div>
+                    <h2 class="section-title reveal stagger-1">Why Institutions Choose ProfQual</h2>
+                    <p class="section-desc mx-auto reveal stagger-2">
+                        We combine UK academic rigour with global accessibility, creating qualifications that truly make a difference.
+                    </p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line d-none d-md-block"></div>
+
+                    <!-- Item 1 -->
+                    <div class="timeline-item left reveal stagger-1">
+                        <div class="timeline-dot"></div>
+                        <div class="tl-content">
+                            <div class="tl-icon bi-gold"><i class="bi bi-award"></i></div>
+                            <h5>UK Qualification Standards</h5>
+                            <p>All qualifications are developed to meet the rigorous standards of the UK's Regulated Qualifications Framework.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item right reveal stagger-2">
+                        <div class="timeline-dot"></div>
+                        <div class="tl-content">
+                            <div class="tl-icon bi-blue"><i class="bi bi-currency-pound"></i></div>
+                            <h5>Affordable Accreditation</h5>
+                            <p>Competitive fee structures designed to make quality accreditation accessible to institutions of all sizes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item left reveal stagger-3">
+                        <div class="timeline-dot"></div>
+                        <div class="tl-content">
+                            <div class="tl-icon bi-green"><i class="bi bi-earth"></i></div>
+                            <h5>Global Recognition</h5>
+                            <p>Our qualifications open doors internationally, recognised by employers and educational institutions worldwide.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item right reveal stagger-4">
+                        <div class="timeline-dot"></div>
+                        <div class="tl-content">
+                            <div class="tl-icon bi-purple"><i class="bi bi-cpu"></i></div>
+                            <h5>Industry-Relevant Curriculum</h5>
+                            <p>Co-developed with industry leaders to ensure graduates possess skills that employers actually need.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="timeline-item left reveal stagger-5">
+                        <div class="timeline-dot"></div>
+                        <div class="tl-content">
+                            <div class="tl-icon bi-rose"><i class="bi bi-laptop"></i></div>
+                            <h5>Flexible Learning</h5>
+                            <p>Support for blended, online, and in-person delivery models that adapt to diverse learner needs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="timeline-item right reveal stagger-6">
+                        <div class="timeline-dot"></div>
+                        <div class="tl-content">
+                            <div class="tl-icon bi-teal"><i class="bi bi-patch-check-fill"></i></div>
+                            <h5>Professional Certification</h5>
+                            <p>Industry-recognised certifications that enhance career progression and professional development pathways.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ACCREDITATION PROCESS ===== -->
+        <section class="process-section" id="accreditation" aria-label="Accreditation Process">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-badge reveal mb-3">
+                        <i class="bi bi-arrow-repeat"></i>
+                        Process
+                    </div>
+                    <h2 class="section-title reveal stagger-1">Simple 4-Step Accreditation</h2>
+                    <p class="section-desc mx-auto reveal stagger-2">
+                        Our streamlined process gets your centre accredited and ready to deliver ProfQual qualifications efficiently.
+                    </p>
+                </div>
+
+                <div class="process-steps" id="processSteps">
+                    <div class="process-line">
+                        <div class="process-line-fill"></div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="step-item reveal stagger-1">
+                                <div class="step-number">01</div>
+                                <div>
+                                    <h5>Apply</h5>
+                                    <p>Submit your centre application with relevant documentation and evidence of capability.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="step-item reveal stagger-2">
+                                <div class="step-number">02</div>
+                                <div>
+                                    <h5>Assessment</h5>
+                                    <p>Our team conducts a thorough evaluation of your facilities, resources, and team expertise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="step-item reveal stagger-3">
+                                <div class="step-number">03</div>
+                                <div>
+                                    <h5>Approval</h5>
+                                    <p>Receive formal approval along with your centre designation and qualification access credentials.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="step-item reveal stagger-4">
+                                <div class="step-number">04</div>
+                                <div>
+                                    <h5>Certification</h5>
+                                    <p>Start delivering qualifications and issue ProfQual certificates to your successful learners.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SUCCESS STORIES ===== -->
+        <section class="stories-section" aria-label="Success Stories">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-badge reveal mb-3" style="border-color: rgba(212,175,55,0.3); background: rgba(212,175,55,0.08);">
+                        <i class="bi bi-chat-quote"></i>
+                        Testimonials
+                    </div>
+                    <h2 class="section-title reveal stagger-1">What Our Partners Say</h2>
+                    <p class="section-desc mx-auto reveal stagger-2">
+                        Hear from centre directors, educators, and learners who have experienced the ProfQual difference.
+                    </p>
+                </div>
+
+                <div class="row g-4" id="testimonialGrid">
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-6 col-lg-4 testimonial-slide reveal stagger-1">
+                        <div class="testimonial-card h-100">
+                            <div class="quote-icon">&ldquo;</div>
+                            <p class="t-text">Becoming a ProfQual-approved centre transformed our institution. The quality framework and support we received were exceptional, and our learners now hold qualifications that are truly valued by employers.</p>
+                            <div class="t-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="t-author">
+                                <img src="https://picsum.photos/seed/ceo-james/96/96.jpg" alt="Dr. James Whitfield" loading="lazy">
+                                <div class="t-author-info">
+                                    <h6>Dr. James Whitfield</h6>
+                                    <span>Principal, London Business College, UK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-6 col-lg-4 testimonial-slide reveal stagger-2">
+                        <div class="testimonial-card h-100">
+                            <div class="quote-icon">&ldquo;</div>
+                            <p class="t-text">The global recognition of ProfQual qualifications has opened incredible doors for our graduates. Employers across the Gulf region specifically seek out our ProfQual-certified candidates.</p>
+                            <div class="t-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="t-author">
+                                <img src="https://picsum.photos/seed/ceo-fatima/96/96.jpg" alt="Fatima Al-Rashid" loading="lazy">
+                                <div class="t-author-info">
+                                    <h6>Fatima Al-Rashid</h6>
+                                    <span>Director, Dubai Institute of Management, UAE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-md-6 col-lg-4 testimonial-slide reveal stagger-3">
+                        <div class="testimonial-card h-100">
+                            <div class="quote-icon">&ldquo;</div>
+                            <p class="t-text">What sets ProfQual apart is their genuine commitment to centre success. The accreditation process was thorough yet supportive, and ongoing quality assurance is world-class.</p>
+                            <div class="t-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <div class="t-author">
+                                <img src="https://picsum.photos/seed/ceo-rajesh/96/96.jpg" alt="Prof. Rajesh Patel" loading="lazy">
+                                <div class="t-author-info">
+                                    <h6>Prof. Rajesh Patel</h6>
+                                    <span>Dean, Mumbai Training Institute, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 (hidden initially for carousel) -->
+                    <div class="col-md-6 col-lg-4 testimonial-slide reveal stagger-1 d-none">
+                        <div class="testimonial-card h-100">
+                            <div class="quote-icon">&ldquo;</div>
+                            <p class="t-text">ProfQual's IT and Cyber Security qualifications have become the gold standard in our region. The curriculum is incredibly relevant, and our pass rates have exceeded all expectations.</p>
+                            <div class="t-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="t-author">
+                                <img src="https://picsum.photos/seed/ceo-chen/96/96.jpg" alt="David Chen" loading="lazy">
+                                <div class="t-author-info">
+                                    <h6>David Chen</h6>
+                                    <span>CEO, Singapore Education Hub, Singapore</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="col-md-6 col-lg-4 testimonial-slide reveal stagger-2 d-none">
+                        <div class="testimonial-card h-100">
+                            <div class="quote-icon">&ldquo;</div>
+                            <p class="t-text">The flexibility of ProfQual's learning frameworks allowed us to deliver qualifications in both full-time and part-time modes. This accessibility has been transformative for working professionals in our region.</p>
+                            <div class="t-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="t-author">
+                                <img src="https://picsum.photos/seed/ceo-aisha/96/96.jpg" alt="Aisha Okonkwo" loading="lazy">
+                                <div class="t-author-info">
+                                    <h6>Aisha Okonkwo</h6>
+                                    <span>Rector, Lagos Professional Academy, Nigeria</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="col-md-6 col-lg-4 testimonial-slide reveal stagger-3 d-none">
+                        <div class="testimonial-card h-100">
+                            <div class="quote-icon">&ldquo;</div>
+                            <p class="t-text">We evaluated several awarding bodies before choosing ProfQual. Their transparent fee structure, responsive support team, and genuine partnership approach made the decision easy.</p>
+                            <div class="t-rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <div class="t-author">
+                                <img src="https://picsum.photos/seed/ceo-mark/96/96.jpg" alt="Mark Sullivan" loading="lazy">
+                                <div class="t-author-info">
+                                    <h6>Mark Sullivan</h6>
+                                    <span>Head of Centre, Toronto Professional Academy, Canada</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevTestimonial" aria-label="Previous testimonial">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <div class="carousel-dots" id="carouselDots">
+                        <div class="carousel-dot active" data-page="0"></div>
+                        <div class="carousel-dot" data-page="1"></div>
+                    </div>
+                    <button class="carousel-btn" id="nextTestimonial" aria-label="Next testimonial">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== APPROVED CENTRES ===== -->
+        <section class="centres-section" id="centres" aria-label="Approved Centres">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <div class="section-badge reveal mb-3">
+                        <i class="bi bi-building"></i>
+                        Our Network
+                    </div>
+                    <h2 class="section-title reveal stagger-1">Trusted Approved Centres Worldwide</h2>
+                    <p class="section-desc mx-auto reveal stagger-2">
+                        Join 2,500+ institutions across the globe that deliver ProfQual qualifications with excellence.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Marquee Row 1 -->
+            <div class="overflow-hidden mb-3">
+                <div class="marquee-track">
+                    <div class="centre-badge"><span class="cb-flag">🇬🇧</span><div><div class="cb-name">London Business College</div><div class="cb-country">United Kingdom</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇦🇪</span><div><div class="cb-name">Dubai Institute of Management</div><div class="cb-country">United Arab Emirates</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇸🇬</span><div><div class="cb-name">Singapore Education Hub</div><div class="cb-country">Singapore</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇨🇦</span><div><div class="cb-name">Toronto Professional Academy</div><div class="cb-country">Canada</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇦🇺</span><div><div class="cb-name">Sydney Qualifications Centre</div><div class="cb-country">Australia</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇩🇪</span><div><div class="cb-name">Berlin Business School</div><div class="cb-country">Germany</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇮🇳</span><div><div class="cb-name">Mumbai Training Institute</div><div class="cb-country">India</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇿🇦</span><div><div class="cb-name">Cape Town Academy</div><div class="cb-country">South Africa</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇰🇪</span><div><div class="cb-name">Nairobi Professional College</div><div class="cb-country">Kenya</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇲🇾</span><div><div class="cb-name">KL Education Centre</div><div class="cb-country">Malaysia</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇮🇪</span><div><div class="cb-name">Dublin Business Academy</div><div class="cb-country">Ireland</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇳🇿</span><div><div class="cb-name">Auckland Institute</div><div class="cb-country">New Zealand</div></div></div>
+                    <!-- Duplicates for seamless loop -->
+                    <div class="centre-badge"><span class="cb-flag">🇬🇧</span><div><div class="cb-name">London Business College</div><div class="cb-country">United Kingdom</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇦🇪</span><div><div class="cb-name">Dubai Institute of Management</div><div class="cb-country">United Arab Emirates</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇸🇬</span><div><div class="cb-name">Singapore Education Hub</div><div class="cb-country">Singapore</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇨🇦</span><div><div class="cb-name">Toronto Professional Academy</div><div class="cb-country">Canada</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇦🇺</span><div><div class="cb-name">Sydney Qualifications Centre</div><div class="cb-country">Australia</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇩🇪</span><div><div class="cb-name">Berlin Business School</div><div class="cb-country">Germany</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇮🇳</span><div><div class="cb-name">Mumbai Training Institute</div><div class="cb-country">India</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇿🇦</span><div><div class="cb-name">Cape Town Academy</div><div class="cb-country">South Africa</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇰🇪</span><div><div class="cb-name">Nairobi Professional College</div><div class="cb-country">Kenya</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇲🇾</span><div><div class="cb-name">KL Education Centre</div><div class="cb-country">Malaysia</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇮🇪</span><div><div class="cb-name">Dublin Business Academy</div><div class="cb-country">Ireland</div></div></div>
+                    <div class="centre-badge"><span class="cb-flag">🇳🇿</span><div><div class="cb-name">Auckland Institute</div><div class="cb-country">New Zealand</div></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CEO MESSAGE ===== -->
+        <section class="ceo-section" aria-label="CEO Message">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Image -->
+                    <div class="col-lg-5 reveal-left">
+                        <div class="ceo-image-wrapper">
+                            <img src="https://picsum.photos/seed/profqual-ceo/600/700.jpg" alt="ProfQual CEO" loading="lazy">
+                            <div class="ceo-experience-badge">
+                                <span>25+</span>
+                                <span>Years Exp.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-7 reveal-right">
+                        <div class="ceo-content">
+                            <div class="ceo-label">Message from the CEO</div>
+                            <h2>Driving Excellence in Global Education</h2>
+                            <p class="ceo-text">
+                                "When we founded ProfQual, our vision was clear: to create a qualification awarding body that bridges the gap between UK academic excellence and global professional needs. Today, seeing over 500,000 learners across 120 countries holding our qualifications is both humbling and motivating.
+                            </p>
+                            <p class="ceo-text">
+                                We remain committed to innovation, accessibility, and unwavering quality. Every qualification we develop, every centre we approve, and every learner we certify represents our promise to set the highest standards in professional education."
+                            </p>
+                            <div class="ceo-signature">
+                                <img src="https://picsum.photos/seed/signature-pq/240/100.jpg" alt="CEO Signature" loading="lazy">
+                                <div class="ceo-signature-info">
+                                    <h6>Sir Michael Harrington</h6>
+                                    <span>Chief Executive Officer, ProfQual</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta-section" id="contact" aria-label="Call to Action">
+            <div class="container position-relative text-center" style="z-index: 2;">
+                <div class="cta-glow-line reveal"></div>
+                <h2 class="reveal stagger-1">Ready To Join A Globally Recognised Qualification Network?</h2>
+                <p class="reveal stagger-2">
+                    Take the first step towards delivering world-class qualifications. Our team is ready to guide you through the accreditation process.
+                </p>
+                <div class="cta-btns reveal stagger-3">
+                    <a href="#" class="btn-accent-lg">
+                        Become a Centre <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
+                    <a href="#" class="btn-outline-light">
+                        Contact Us <i class="bi bi-envelope ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">Prof<span>Qual</span></div>
+                    <p class="footer-desc">
+                        A UK-based qualification awarding body committed to setting global standards in professional education, accreditation, and certification.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Qualifications -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-heading">Qualifications</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Management</a></li>
+                        <li><a href="#">Health & Social Care</a></li>
+                        <li><a href="#">Education & Training</a></li>
+                        <li><a href="#">IT & Cyber Security</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Project Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Resources -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-heading">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Qualification Handbook</a></li>
+                        <li><a href="#">Centre Guidance</a></li>
+                        <li><a href="#">Assessment Materials</a></li>
+                        <li><a href="#">Quality Assurance</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact + Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="footer-links mb-4">
+                        <li><a href="#"><i class="bi bi-geo-alt"></i> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ, UK</a></li>
+                        <li><a href="mailto:info@profqual.org.uk"><i class="bi bi-envelope"></i> info@profqual.org.uk</a></li>
+                        <li><a href="tel:+442070789012"><i class="bi bi-telephone"></i> +44 (0) 207 078 9012</a></li>
+                    </ul>
+                    <h6 class="footer-heading" style="font-size: 0.8rem;">Newsletter</h6>
+                    <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+                        <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe to newsletter"><i class="bi bi-send"></i></button>
+                    </form>
+                    <p style="font-size: 0.75rem; color: rgba(255,255,255,0.3); margin: 0;">Stay updated with latest qualifications and news.</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 ProfQual. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end footer-bottom-links">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#" class="me-3">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+</body>
+</html>
