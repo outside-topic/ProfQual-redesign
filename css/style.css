@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* ===== CSS VARIABLES ===== */
 :root {
     --primary: #2A2771;
@@ -23,7 +24,6 @@
     --shadow-elevated: 0 20px 60px rgba(0, 0, 0, 0.1);
     --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Inter', sans-serif;
     --border-color: #292771b3;
 }
 
@@ -47,7 +47,7 @@ html {
 
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     color: var(--text);
     background: var(--bg);
     line-height: 1.7;
@@ -290,11 +290,11 @@ span{
 
 /* ===== NAVBAR ===== */
 .dropdown-toggle {
-    border: 0px;
+    border: 0px !important;
 }
 
 .dropdown-toggle:hover {
-    border: 0px;
+    border: 0px !important;
 }
 
 .dropdown-toggle::after {
@@ -370,7 +370,7 @@ span{
 .nav-link-custom:hover,
 .nav-link-custom.active {
     color: var(--secondary) !important;
-    border: 0px;
+    
 }
 
 .nav-link-custom:hover::after,
@@ -1946,7 +1946,7 @@ span{
     border-radius: 12px;
     color: var(--white);
     font-size: 0.88rem;
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     outline: none;
     transition: var(--transition);
 }
@@ -3407,4 +3407,25 @@ span{
 
 .cbg{
     background: var(--primary);
+}
+.alignment{
+    margin: 0px auto;
+}
+.breadcrumb-item{
+    a{
+        color: var(--white);
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+}
+.breadcrumb-item::before{
+    color: var(--white) !important;
+    padding-top: 5px;
+    padding-right: 25px !important;
+}
+.breadcrumb{
+    padding: 15px 30px;
+    background: rgba(37, 99, 235, 0.1);
+    border-radius: 15px;
+    border: 1px solid #2721d6;
 }
