@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfQual Navbar</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Custom CSS (See below) -->
+    <style>
+        /* ===== NAVBAR BASE ===== */
+        .navbar-profqual {
+            padding: 1.2rem 0;
+            transition: var(--transition);
+            position: fixed;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.85);
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1050;
+            border-bottom: 1px solid transparent;
+        }
+
+        .navbar-profqual.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 0.6rem 0;
+            box-shadow: 0 4px 30px rgba(10, 31, 68, 0.06);
+            border-bottom: 1px solid rgba(10, 31, 68, 0.05);
+        }
+
+        /* ===== LOGO & BRAND ===== */
+        .navbar-brand-custom {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.6rem;
+            color: var(--primary) !important;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .navbar-brand-custom img {
+            transition: var(--transition);
+        }
+
+        .navbar-profqual.scrolled .navbar-brand-custom img {
+            width: 45px !important;
+            height: 45px !important;
+        }
+
+        /* ===== DESKTOP NAVIGATION ===== */
+        .navbar-nav-desktop {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .nav-link-custom {
+            font-family: var(--font-heading);
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--dark) !important;
+            padding: 0.6rem 1.1rem !important;
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            border-radius: 8px;
+        }
+
+        /* Sliding Active Indicator */
+        .nav-link-custom::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            width: 0;
+            height: 3px;
+            background: var(--accent);
+            transition: var(--transition);
+            transform: translateX(-50%);
+            border-radius: 2px;
+        }
+
+        .nav-link-custom:hover,
+        .nav-link-custom.active {
+            color: var(--primary) !important;
+            background: rgba(10, 31, 68, 0.03);
+        }
+
+        .nav-link-custom:hover::after,
+        .nav-link-custom.active::after {
+            width: 50%;
+        }
+
+
+        
+
+        .dropdown-item-mega {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 1rem;
+            border-radius: 12px;
+            transition: var(--transition);
+            text-decoration: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .dropdown-item-mega:last-child {
+            margin-bottom: 0;
+        }
+
+        .dropdown-item-mega:hover {
+            background: rgba(10, 31, 68, 0.04);
+        }
+
+        .mega-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            flex-shrink: 0;
+            transition: var(--transition);
+        }
+
+        .dropdown-item-mega:hover .mega-icon {
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            transform: rotate(-5deg) scale(1.05);
+        }
+
+        .mega-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mega-title {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--primary);
+            margin-bottom: 2px;
+        }
+
+        .mega-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.4;
+        }
+
+        /* ===== CTA BUTTON ===== */
+        .navbar-cta {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white) !important;
+            font-family: var(--font-heading);
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.7rem 1.6rem;
+            border-radius: 50px;
+            transition: var(--transition);
+            border: none;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .navbar-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--accent), var(--accent2));
+            transition: opacity 0.4s ease;
+            opacity: 0;
+            z-index: -1;
+        }
+
+        .navbar-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(10, 31, 68, 0.3);
+            color: var(--primary) !important;
+        }
+
+        .navbar-cta:hover::before {
+            opacity: 1;
+        }
+
+        /* ===== MOBILE TOGGLE ===== */
+        .custom-toggler {
+            border: none;
+            color: var(--primary);
+            font-size: 1.8rem;
+            padding: 0;
+            line-height: 1;
+        }
+
+        /* ===== OFFCANVAS (MOBILE MENU) ===== */
+        .offcanvas {
+            background: var(--dark) !important;
+            max-width: 340px;
+            border-left: 1px solid rgba(255,255,255,0.1) !important;
+        }
+
+        .offcanvas-header {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+        }
+
+        .offcanvas .btn-close {
+            filter: invert(1) grayscale(100%) brightness(200%);
+            opacity: 0.8;
+        }
+
+        .offcanvas-body {
+            padding: 1.5rem;
+        }
+
+        .mobile-nav-link {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8) !important;
+            padding: 1rem 0 !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .mobile-nav-link:hover, .mobile-nav-link.active {
+            color: var(--white) !important;
+            padding-left: 10px !important;
+        }
+
+        .mobile-chevron {
+            transition: transform 0.3s ease;
+        }
+
+        .mobile-nav-link[aria-expanded="true"] .mobile-chevron {
+            transform: rotate(180deg);
+            color: var(--accent);
+        }
+
+        .mobile-submenu {
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 0 0 12px 12px;
+            margin-top: -1px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .mobile-submenu a {
+            display: block;
+            color: rgba(255, 255, 255, 0.6) !important;
+            padding: 0.6rem 1rem;
+            font-size: 0.95rem;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .mobile-submenu a:hover {
+            color: var(--accent) !important;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .offcanvas .navbar-cta {
+            width: 100%;
+            margin-top: 2rem;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar-profqual" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+                
+                <!-- Logo -->
+                <a class="navbar-brand-custom" href="#" aria-label="ProfQual Home">
+                    <img src="images/logo.png" style="width: 55px; height: 55px;" alt="ProfQual Logo">
+                </a>
+
+                <!-- Desktop Nav -->
+                <ul class="navbar-nav-desktop d-none d-lg-flex align-items-center gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link-custom active" href="#home">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#why-us">
+                                <div class="mega-icon"><i class="bi bi-bullseye"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Why Us</span>
+                                    <span class="mega-desc">Discover our unique value proposition.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#who-we-are">
+                                <div class="mega-icon"><i class="bi bi-people"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Who We Are</span>
+                                    <span class="mega-desc">Learn about our mission and authority.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Qualification 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#profqual-qual">
+                                <div class="mega-icon"><i class="bi bi-journal-check"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">ProfQual Qualification</span>
+                                    <span class="mega-desc">Explore our standard qualifications.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#bespoke-qual">
+                                <div class="mega-icon"><i class="bi bi-sliders"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Bespoke Qualification Service</span>
+                                    <span class="mega-desc">Tailored qualifications for your organization.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#course-accreditation">
+                                <div class="mega-icon"><i class="bi bi-patch-check"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Course Accreditation</span>
+                                    <span class="mega-desc">Get your internal courses accredited.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Centre 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#centre-profqual">
+                                <div class="mega-icon"><i class="bi bi-building"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">ProfQual Qualification</span>
+                                    <span class="mega-desc">Offer our qualifications at your centre.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#centre-bespoke">
+                                <div class="mega-icon"><i class="bi bi-gear"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Bespoke Qualification Service</span>
+                                    <span class="mega-desc">Custom solutions for your centre.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#centre-accreditation">
+                                <div class="mega-icon"><i class="bi bi-award"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Course Accreditation</span>
+                                    <span class="mega-desc">Accredit your internal training programs.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Learners 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#learner-info">
+                                <div class="mega-icon"><i class="bi bi-info-circle"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Information for Learners</span>
+                                    <span class="mega-desc">Resources, guides, and support for students.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Verify 
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#verify-1">
+                                <div class="mega-icon"><i class="bi bi-shield-check"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Confirm authenticity instantly.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#verify-2">
+                                <div class="mega-icon"><i class="bi bi-shield-lock"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Check professional status.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#verify-3">
+                                <div class="mega-icon"><i class="bi bi-search"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Search registry database.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#verify-4">
+                                <div class="mega-icon"><i class="bi bi-exclamation-triangle"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Report a fraudulent certificate.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- CTA + Mobile Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#contact" class="navbar-cta d-none d-md-inline-flex">
+                        Get Accredited
+                    </a>
+                    <button class="d-lg-none bg-transparent text-white fs-4 custom" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <span class="navbar-brand-custom text-white">ProfQual</span>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-column">
+                    
+                    <a class="mobile-nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a>
+
+                    <!-- About Us Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileAbout" role="button" aria-expanded="false" aria-controls="mobileAbout">
+                        About Us <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileAbout">
+                        <a href="#why-us" data-bs-dismiss="offcanvas">Why Us</a>
+                        <a href="#who-we-are" data-bs-dismiss="offcanvas">Who We Are</a>
+                    </div>
+
+                    <!-- Qualification Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileQual" role="button" aria-expanded="false" aria-controls="mobileQual">
+                        Qualification <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileQual">
+                        <a href="#profqual-qual" data-bs-dismiss="offcanvas">ProfQual Qualification</a>
+                        <a href="#bespoke-qual" data-bs-dismiss="offcanvas">Bespoke Qualification Service</a>
+                        <a href="#course-accreditation" data-bs-dismiss="offcanvas">Course Accreditation</a>
+                    </div>
+
+                    <!-- Centre Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileCentre" role="button" aria-expanded="false" aria-controls="mobileCentre">
+                        Centre <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileCentre">
+                        <a href="#centre-profqual" data-bs-dismiss="offcanvas">ProfQual Qualification</a>
+                        <a href="#centre-bespoke" data-bs-dismiss="offcanvas">Bespoke Qualification Service</a>
+                        <a href="#centre-accreditation" data-bs-dismiss="offcanvas">Course Accreditation</a>
+                    </div>
+
+                    <!-- Learners Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileLearners" role="button" aria-expanded="false" aria-controls="mobileLearners">
+                        Learners <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileLearners">
+                        <a href="#learner-info" data-bs-dismiss="offcanvas">Information for Learners</a>
+                    </div>
+
+                    <a class="mobile-nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+
+                    <!-- Verify Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileVerify" role="button" aria-expanded="false" aria-controls="mobileVerify">
+                        Verify <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileVerify">
+                        <a href="#verify-1" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                        <a href="#verify-2" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                        <a href="#verify-3" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                        <a href="#verify-4" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                    </div>
+
+                    <a href="#contact" class="navbar-cta mt-4" data-bs-dismiss="offcanvas">
+                        Get Accredited
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS (See below) -->
+    <script>
+        // ===== NAVBAR SCROLL EFFECT =====
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ===== DESKTOP HOVER DROPDOWNS =====
+        // Enables hover-to-open on desktop while preserving click-to-open for accessibility
+        function setupHoverDropdowns() {
+            const dropdowns = document.querySelectorAll('.navbar-nav-desktop .dropdown');
+            const windowWidth = window.innerWidth;
+
+            dropdowns.forEach(dropdown => {
+                const toggle = dropdown.querySelector('.dropdown-toggle');
+                
+                // Hover open
+                dropdown.addEventListener('mouseenter', function() {
+                    if (windowWidth > 992) {
+                        const bsDropdown = bootstrap.Dropdown.getOrCreateInstance(toggle);
+                        bsDropdown.show();
+                    }
+                });
+
+                // Hover close
+                dropdown.addEventListener('mouseleave', function() {
+                    if (windowWidth > 992) {
+                        const bsDropdown = bootstrap.Dropdown.getOrCreateInstance(toggle);
+                        bsDropdown.hide();
+                    }
+                });
+            });
+        }
+        setupHoverDropdowns();
+
+        // ===== ACTIVE LINK MANAGEMENT ON SCROLL (Optional but recommended) =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.navbar-nav-desktop .nav-link-custom');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Choose Us | ProfQual - Trusted Awarding Body in the UK</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* ========== ROOT DESIGN TOKENS ========== */
+        :root {
+            --primary-dark: #1B2A4A;
+            --primary-light: #3D5A99;
+            --accent-dark: #00A381;
+            --accent-light: #00D9A7;
+            --orange: #F39C12;
+            --orange-light: #FDCB6E;
+            --bg-light: #F5F7FA;
+            --bg-white: #FFFFFF;
+            --text-dark: #1B2A4A;
+            --text-body: #5A6578;
+            --text-muted: #8E99A8;
+            --border-color: #E8ECF1;
+            --shadow-sm: 0 2px 8px rgba(27, 42, 74, 0.06);
+            --shadow-md: 0 4px 20px rgba(27, 42, 74, 0.08);
+            --shadow-lg: 0 8px 40px rgba(27, 42, 74, 0.12);
+            --shadow-card: 0 4px 16px rgba(27, 42, 74, 0.07);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --transition: all 0.3s ease;
+        }
+
+        /* ========== BASE RESET ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-body);
+            line-height: 1.7;
+            overflow-x: hidden;
+            background: var(--bg-white);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--text-dark);
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        a {
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar-profqual" id="mainNav" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <a class="navbar-brand-custom" href="#" aria-label="ProfQual Home">
+                    <img src="images/logo.png" style="width: 55px; height: 55px;" alt="ProfQual Logo">
+                </a>
+
+                <!-- Desktop Nav -->
+                <ul class="navbar-nav-desktop d-none d-lg-flex align-items-center gap-1">
+                    <li class="nav-item">
+                        <a class="nav-link-custom active" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About Us
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#why-us">
+                                <div class="mega-icon"><i class="bi bi-bullseye"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Why Us</span>
+                                    <span class="mega-desc">Discover our unique value proposition.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#who-we-are">
+                                <div class="mega-icon"><i class="bi bi-people"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Who We Are</span>
+                                    <span class="mega-desc">Learn about our mission and authority.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Qualification
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#profqual-qual">
+                                <div class="mega-icon"><i class="bi bi-journal-check"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">ProfQual Qualification</span>
+                                    <span class="mega-desc">Explore our standard qualifications.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#bespoke-qual">
+                                <div class="mega-icon"><i class="bi bi-sliders"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Bespoke Qualification Service</span>
+                                    <span class="mega-desc">Tailored qualifications for your organization.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#course-accreditation">
+                                <div class="mega-icon"><i class="bi bi-patch-check"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Course Accreditation</span>
+                                    <span class="mega-desc">Get your internal courses accredited.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Centre
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#centre-profqual">
+                                <div class="mega-icon"><i class="bi bi-building"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">ProfQual Qualification</span>
+                                    <span class="mega-desc">Offer our qualifications at your centre.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#centre-bespoke">
+                                <div class="mega-icon"><i class="bi bi-gear"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Bespoke Qualification Service</span>
+                                    <span class="mega-desc">Custom solutions for your centre.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#centre-accreditation">
+                                <div class="mega-icon"><i class="bi bi-award"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Course Accreditation</span>
+                                    <span class="mega-desc">Accredit your internal training programs.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Learners
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#learner-info">
+                                <div class="mega-icon"><i class="bi bi-info-circle"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Information for Learners</span>
+                                    <span class="mega-desc">Resources, guides, and support for students.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link-custom" href="#contact">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Verify
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item-mega" href="#verify-1">
+                                <div class="mega-icon"><i class="bi bi-shield-check"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Confirm authenticity instantly.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#verify-2">
+                                <div class="mega-icon"><i class="bi bi-shield-lock"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Check professional status.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#verify-3">
+                                <div class="mega-icon"><i class="bi bi-search"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Search registry database.</span>
+                                </div>
+                            </a>
+                            <a class="dropdown-item-mega" href="#verify-4">
+                                <div class="mega-icon"><i class="bi bi-exclamation-triangle"></i></div>
+                                <div class="mega-content">
+                                    <span class="mega-title">Verify Certificate</span>
+                                    <span class="mega-desc">Report a fraudulent certificate.</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- CTA + Mobile Toggle -->
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#contact" class="navbar-cta d-none d-md-inline-flex">
+                        Get Accredited
+                    </a>
+                    <button class="d-lg-none bg-transparent text-white fs-4 custom" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <span class="navbar-brand-custom text-white">ProfQual</span>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="d-flex flex-column">
+
+                    <a class="mobile-nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a>
+
+                    <!-- About Us Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileAbout" role="button"
+                        aria-expanded="false" aria-controls="mobileAbout">
+                        About Us <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileAbout">
+                        <a href="#why-us" data-bs-dismiss="offcanvas">Why Us</a>
+                        <a href="#who-we-are" data-bs-dismiss="offcanvas">Who We Are</a>
+                    </div>
+
+                    <!-- Qualification Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileQual" role="button"
+                        aria-expanded="false" aria-controls="mobileQual">
+                        Qualification <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileQual">
+                        <a href="#profqual-qual" data-bs-dismiss="offcanvas">ProfQual Qualification</a>
+                        <a href="#bespoke-qual" data-bs-dismiss="offcanvas">Bespoke Qualification Service</a>
+                        <a href="#course-accreditation" data-bs-dismiss="offcanvas">Course Accreditation</a>
+                    </div>
+
+                    <!-- Centre Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileCentre" role="button"
+                        aria-expanded="false" aria-controls="mobileCentre">
+                        Centre <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileCentre">
+                        <a href="#centre-profqual" data-bs-dismiss="offcanvas">ProfQual Qualification</a>
+                        <a href="#centre-bespoke" data-bs-dismiss="offcanvas">Bespoke Qualification Service</a>
+                        <a href="#centre-accreditation" data-bs-dismiss="offcanvas">Course Accreditation</a>
+                    </div>
+
+                    <!-- Learners Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileLearners" role="button"
+                        aria-expanded="false" aria-controls="mobileLearners">
+                        Learners <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileLearners">
+                        <a href="#learner-info" data-bs-dismiss="offcanvas">Information for Learners</a>
+                    </div>
+
+                    <a class="mobile-nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
+
+                    <!-- Verify Accordion -->
+                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileVerify" role="button"
+                        aria-expanded="false" aria-controls="mobileVerify">
+                        Verify <i class="bi bi-chevron-down mobile-chevron"></i>
+                    </a>
+                    <div class="collapse mobile-submenu" id="mobileVerify">
+                        <a href="#verify-1" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                        <a href="#verify-2" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                        <a href="#verify-3" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                        <a href="#verify-4" data-bs-dismiss="offcanvas">Verify Certificate</a>
+                    </div>
+
+                    <a href="#contact" class="navbar-cta mt-4" data-bs-dismiss="offcanvas">
+                        Get Accredited
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="hero-badge fade-up">
+                        <i class="bi bi-patch-check-fill"></i>
+                        UK Regulated Awarding Body
+                    </div>
+                    <h1 class="hero-title fade-up fade-up-delay-1">
+                        Why Choose <span>ProfQual</span> as Your Awarding Partner
+                    </h1>
+                    <p class="hero-description fade-up fade-up-delay-2">
+                        We combine academic rigour with practical innovation to deliver qualifications that are globally
+                        recognised, industry-relevant, and learner-focused.
+                    </p>
+                    <div class="hero-buttons fade-up fade-up-delay-3">
+                        <a href="#features" class="btn-primary-custom">
+                            Explore Benefits
+                            <i class="bi bi-arrow-down-circle"></i>
+                        </a>
+                        <a href="contact.html" class="btn-outline-custom">
+                            Talk to Our Team
+                            <i class="bi bi-chat-dots"></i>
+                        </a>
+                    </div>
+                    <div class="hero-stats fade-up fade-up-delay-4">
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-number">15K+</div>
+                            <div class="hero-stat-label">Active Learners</div>
+                        </div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-number">36+</div>
+                            <div class="hero-stat-label">Countries Served</div>
+                        </div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-number">98%</div>
+                            <div class="hero-stat-label">Satisfaction Rate</div>
+                        </div>
+                        <div class="hero-stat-item">
+                            <div class="hero-stat-number">200+</div>
+                            <div class="hero-stat-label">Approved Centres</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative dots -->
+        <div class="hero-dots d-none d-lg-block">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+
+    <!-- ========== INTRO SECTION ========== -->
+    <section class="intro-section section-padding">
+        <div class="container">
+            <div class="intro-content fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-info-circle"></i>
+                    Our Commitment
+                </div>
+                <h2 class="section-title">Built on Excellence, Driven by Purpose</h2>
+                <p>
+                    At ProfQual, we believe that world-class education should be accessible, relevant, and
+                    transformative. As a UK-regulated awarding body, we've built our reputation on delivering
+                    qualifications that meet the highest standards of quality while remaining practical and aligned with
+                    real-world industry needs.
+                </p>
+                <p>
+                    Every qualification we develop undergoes rigorous consultation with employers, educators, and
+                    industry experts to ensure it delivers genuine value — to learners, training providers, and the
+                    wider economy.
+                </p>
+                <div class="intro-highlight">
+                    <div class="intro-highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Ofqual Regulated
+                    </div>
+                    <div class="intro-highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Globally Recognised
+                    </div>
+                    <div class="intro-highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Industry-Driven
+                    </div>
+                    <div class="intro-highlight-item">
+                        <i class="bi bi-check-circle-fill"></i>
+                        Learner-Centred
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== KEY BENEFITS SECTION ========== -->
+    <section class="benefits-section section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-star"></i>
+                    Key Benefits
+                </div>
+                <h2 class="section-title">What Sets Us Apart</h2>
+                <p class="section-subtitle">
+                    From regulatory compliance to learner support, every aspect of ProfQual is designed to deliver
+                    exceptional outcomes.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="benefit-item fade-up fade-up-delay-1">
+                        <div class="benefit-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h5>Ofqual Regulation & Quality Assurance</h5>
+                            <p>All our qualifications are regulated by Ofqual, ensuring they meet the strictest
+                                standards of quality, validity, and fairness in the UK qualifications framework.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item fade-up fade-up-delay-2">
+                        <div class="benefit-icon">
+                            <i class="bi bi-globe2"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h5>International Recognition & Portability</h5>
+                            <p>Our qualifications are recognised across 36+ countries, enabling learners to showcase
+                                their skills globally and pursue opportunities anywhere in the world.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item fade-up fade-up-delay-3">
+                        <div class="benefit-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h5>Dedicated Centre Support</h5>
+                            <p>We provide comprehensive support to our approved centres including guidance documents,
+                                training workshops, and a dedicated relationship manager.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefit-item fade-up fade-up-delay-1">
+                        <div class="benefit-icon">
+                            <i class="bi bi-lightning-charge"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h5>Fast & Flexible Qualification Development</h5>
+                            <p>Our streamlined processes enable quicker development and approval of custom
+                                qualifications, helping centres respond to emerging market demands rapidly.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item fade-up fade-up-delay-2">
+                        <div class="benefit-icon">
+                            <i class="bi bi-cpu"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h5>Modern Digital Infrastructure</h5>
+                            <p>Our cutting-edge online systems for registration, assessment, and certification simplify
+                                administration and reduce the bureaucratic burden on centres.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-item fade-up fade-up-delay-3">
+                        <div class="benefit-icon">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <div class="benefit-text">
+                            <h5>Proven Learner Outcomes</h5>
+                            <p>With a 98% satisfaction rate and strong progression pathways, our qualifications
+                                consistently deliver measurable improvements in learner careers and prospects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURE CARDS SECTION ========== -->
+    <section class="features-section section-padding-lg" id="features">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                    Our Strengths
+                </div>
+                <h2 class="section-title">Delivering Excellence Across Every Dimension</h2>
+                <p class="section-subtitle">
+                    Our holistic approach ensures excellence in qualification design, delivery, assessment, and learner
+                    support.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-up fade-up-delay-1">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-book-half"></i>
+                        </div>
+                        <h4>Rigorous Curriculum Design</h4>
+                        <p>Each qualification is crafted through extensive industry consultation, ensuring content is
+                            current, relevant, and aligned with professional standards.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-up fade-up-delay-2">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-clipboard2-check"></i>
+                        </div>
+                        <h4>Robust Assessment Framework</h4>
+                        <p>Our assessment methods balance academic rigour with practical application, giving learners
+                            opportunities to demonstrate real-world competence.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-up fade-up-delay-3">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-arrow-repeat"></i>
+                        </div>
+                        <h4>Continuous Improvement</h4>
+                        <p>We regularly review and update our qualifications based on learner feedback, industry
+                            changes, and evolving regulatory requirements.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-up fade-up-delay-1">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-mortarboard"></i>
+                        </div>
+                        <h4>Progression Pathways</h4>
+                        <p>Clear progression routes from entry-level to advanced qualifications help learners build
+                            their credentials systematically and achieve their career goals.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-up fade-up-delay-2">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-translate"></i>
+                        </div>
+                        <h4>Multilingual Support</h4>
+                        <p>We offer support materials and assessment options in multiple languages, removing barriers
+                            for international learners and centres.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card fade-up fade-up-delay-3">
+                        <div class="feature-card-icon">
+                            <i class="bi bi-shield-lock"></i>
+                        </div>
+                        <h4>Data Security & Integrity</h4>
+                        <p>Advanced data protection measures and secure certification systems ensure learner records and
+                            qualifications are protected at every stage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STATS SECTION ========== -->
+    <section class="stats-section section-padding">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-bar-chart-line"></i>
+                    Our Impact
+                </div>
+                <h2 class="section-title">Numbers That Speak for Themselves</h2>
+                <p class="section-subtitle">
+                    Our growing global presence is a testament to the trust and confidence centres and learners place in
+                    ProfQual.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card fade-up fade-up-delay-1">
+                        <div class="stat-number" data-target="15000">0</div>
+                        <div class="stat-label">Active Learners Worldwide</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card fade-up fade-up-delay-2">
+                        <div class="stat-number" data-target="36">0</div>
+                        <div class="stat-label">Countries Represented</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card fade-up fade-up-delay-3">
+                        <div class="stat-number" data-target="200">0</div>
+                        <div class="stat-label">Approved Centres</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="stat-card fade-up fade-up-delay-4">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Qualifications Offered</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS SECTION ========== -->
+    <section class="process-section section-padding-lg">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-diagram-3"></i>
+                    How It Works
+                </div>
+                <h2 class="section-title">Your Journey with ProfQual</h2>
+                <p class="section-subtitle">
+                    From initial enquiry to certified qualification, we make the process seamless and supportive at
+                    every step.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step fade-up fade-up-delay-1">
+                        <div class="process-connector"></div>
+                        <div class="process-number">1</div>
+                        <div class="process-icon">
+                            <i class="bi bi-chat-left-text"></i>
+                        </div>
+                        <h5>Initial Consultation</h5>
+                        <p>We understand your needs, market, and objectives to recommend the most suitable qualification
+                            pathway.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step fade-up fade-up-delay-2">
+                        <div class="process-connector"></div>
+                        <div class="process-number">2</div>
+                        <div class="process-icon">
+                            <i class="bi bi-file-earmark-check"></i>
+                        </div>
+                        <h5>Centre Approval</h5>
+                        <p>Our straightforward approval process verifies your capability to deliver our qualifications
+                            with quality and integrity.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step fade-up fade-up-delay-3">
+                        <div class="process-connector"></div>
+                        <div class="process-number">3</div>
+                        <div class="process-icon">
+                            <i class="bi bi-person-check"></i>
+                        </div>
+                        <h5>Learner Registration</h5>
+                        <p>Register learners through our streamlined digital platform with minimal paperwork and instant
+                            confirmation.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step fade-up fade-up-delay-4">
+                        <div class="process-number">4</div>
+                        <div class="process-icon">
+                            <i class="bi bi-award"></i>
+                        </div>
+                        <h5>Certification</h5>
+                        <p>Upon successful completion, learners receive secure, verifiable certificates recognised by
+                            employers worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TRUST & CREDIBILITY SECTION ========== -->
+    <section class="trust-section section-padding-lg">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-up">
+                    <div class="trust-image-wrapper">
+                        <img src="https://picsum.photos/seed/profqual-trust/700/420.jpg"
+                            alt="ProfQual Trust and Credibility">
+                        <div class="trust-badge-overlay">
+                            <div class="trust-badge-icon">
+                                <i class="bi bi-patch-check-fill"></i>
+                            </div>
+                            <div class="trust-badge-text">
+                                <h6>Ofqual Regulated</h6>
+                                <p>Recognised Awarding Body</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="trust-content fade-up fade-up-delay-2">
+                        <div class="section-badge">
+                            <i class="bi bi-shield-fill-check"></i>
+                            Trust & Credibility
+                        </div>
+                        <h2>Awarding Body You Can Rely On</h2>
+                        <p>ProfQual operates under the direct regulation of Ofqual, the UK's qualifications regulator.
+                            This means every qualification we award carries the full weight and credibility of the UK
+                            regulated qualifications framework.</p>
+                        <ul class="trust-list">
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Registered with Ofqual as a recognised awarding organisation</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>All qualifications listed on the Regulated Qualifications Framework (RQF)</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Regular external quality assurance audits and reviews</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Transparent fee structure with no hidden costs</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Active member of key industry and education bodies</span>
+                            </li>
+                            <li>
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span>Secure, verifiable digital certification system</span>
+                            </li>
+                        </ul>
+                        <a href="about.html" class="btn-dark-custom">
+                            Learn More About Us
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="testimonials-section section-padding-lg">
+        <div class="container">
+            <div class="section-header fade-up">
+                <div class="section-badge">
+                    <i class="bi bi-chat-quote"></i>
+                    Testimonials
+                </div>
+                <h2 class="section-title">Trusted by Centres Worldwide</h2>
+                <p class="section-subtitle">
+                    Hear from the training providers and educators who have chosen ProfQual as their awarding partner.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card fade-up fade-up-delay-1">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Partnering with ProfQual has been transformative for our institution. Their qualification
+                            framework is rigorous yet flexible, allowing us to serve diverse learner populations
+                            effectively."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">JD</div>
+                            <div class="testimonial-author-info">
+                                <h6>Dr. James Donovan</h6>
+                                <p>Director, London Academy of Business</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card fade-up fade-up-delay-2">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "The support we receive from ProfQual is outstanding. From the initial approval process to
+                            ongoing quality assurance, their team is responsive, knowledgeable, and genuinely committed
+                            to our success."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">SA</div>
+                            <div class="testimonial-author-info">
+                                <h6>Sarah Al-Rashid</h6>
+                                <p>CEO, Gulf Education Partners, UAE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="testimonial-card fade-up fade-up-delay-3">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "What impressed us most is how ProfQual balances academic rigour with practical relevance.
+                            Our learners graduate with qualifications that employers truly value and recognise."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">MK</div>
+                            <div class="testimonial-author-info">
+                                <h6>Michael Kowalski</h6>
+                                <p>Head of Programmes, EuroCollege, Poland</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA SECTION ========== -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-up">
+                <h2>Ready to Partner with a Leading Awarding Body?</h2>
+                <p>Join 200+ approved centres worldwide and start delivering ProfQual qualifications that make a real
+                    difference to your learners' futures.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary-custom">
+                        Become an Approved Centre
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="qualifications.html" class="btn-outline-custom">
+                        Browse Qualifications
+                        <i class="bi bi-grid"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer-section" role="contentinfo">
+        <div class="container">
+            <div class="row g-4 g-lg-5">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand"><img src="images/logo.png" style="width: 60px; height: 60px;" alt="">
+                    </div>
+                    <p class="footer-desc">
+                        A UK-based qualification awarding body committed to setting global standards in professional
+                        education, accreditation, and certification.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Qualifications -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-heading">Qualifications</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Business Management</a></li>
+                        <li><a href="#">Health & Social Care</a></li>
+                        <li><a href="#">Education & Training</a></li>
+                        <li><a href="#">IT & Cyber Security</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Project Management</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Resources -->
+                <div class="col-lg-2 col-md-6 col-6">
+                    <h6 class="footer-heading">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Qualification Handbook</a></li>
+                        <li><a href="#">Centre Guidance</a></li>
+                        <li><a href="#">Assessment Materials</a></li>
+                        <li><a href="#">Quality Assurance</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Contact + Newsletter -->
+                <div class="col-lg-4 col-md-6">
+                    <h6 class="footer-heading">Contact</h6>
+                    <ul class="footer-links mb-4">
+                        <li><a href="#"><i class="bi bi-geo-alt"></i> 71-75 Shelton Street, Covent Garden, London, WC2H
+                                9JQ, UK</a></li>
+                        <li><a href="mailto:info@profqual.org.uk"><i class="bi bi-envelope"></i>
+                                info@profqual.org.uk</a></li>
+                        <li><a href="tel:+442070789012"><i class="bi bi-telephone"></i> +44 (0) 207 078 9012</a></li>
+                    </ul>
+                    <h6 class="footer-heading" style="font-size: 0.8rem;">Newsletter</h6>
+                    <form class="newsletter-form" onsubmit="return handleNewsletter(event)">
+                        <input type="email" placeholder="Your email address" required aria-label="Email for newsletter">
+                        <button type="submit" aria-label="Subscribe to newsletter"><i class="bi bi-send"></i></button>
+                    </form>
+                    <p style="font-size: 0.75rem; color: rgba(255,255,255,0.3); margin: 0;">Stay updated with latest
+                        qualifications and news.</p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <p>&copy; 2025 ProfQual. All rights reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end footer-bottom-links">
+                        <a href="#" class="me-3">Privacy Policy</a>
+                        <a href="#" class="me-3">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // ========== NAVBAR SCROLL EFFECT ==========
+        const navbar = document.getElementById('mainNav');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ========== BACK TO TOP ==========
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ========== SCROLL ANIMATIONS (Intersection Observer) ==========
+        const fadeElements = document.querySelectorAll('.fade-up');
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px 0px -60px 0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        fadeElements.forEach(el => observer.observe(el));
+
+        // ========== COUNTER ANIMATION ==========
+        const statNumbers = document.querySelectorAll('.stat-number[data-target]');
+        let countersAnimated = false;
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersAnimated) {
+                    countersAnimated = true;
+                    statNumbers.forEach(counter => {
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const startTime = performance.now();
+
+                        function updateCounter(currentTime) {
+                            const elapsed = currentTime - startTime;
+                            const progress = Math.min(elapsed / duration, 1);
+                            // Ease out cubic
+                            const eased = 1 - Math.pow(1 - progress, 3);
+                            const current = Math.floor(eased * target);
+
+                            if (target >= 1000) {
+                                counter.textContent = (current / 1000).toFixed(current >= target ? 0 : 1) + 'K+';
+                                if (progress >= 1) {
+                                    counter.textContent = (target / 1000) + 'K+';
+                                }
+                            } else {
+                                counter.textContent = current + '+';
+                                if (progress >= 1) {
+                                    counter.textContent = target + '+';
+                                }
+                            }
+
+                            if (progress < 1) {
+                                requestAnimationFrame(updateCounter);
+                            }
+                        }
+
+                        requestAnimationFrame(updateCounter);
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (statNumbers.length > 0) {
+            counterObserver.observe(statNumbers[0].closest('.stats-section') || statNumbers[0]);
+        }
+
+        // ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offset = 80;
+                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                    window.scrollTo({ top, behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ========== CLOSE MOBILE NAV ON CLICK ==========
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navCollapse = document.getElementById('navMenu');
+        const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth < 992) {
+                    bsCollapse.hide();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
