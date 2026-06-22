@@ -24,6 +24,7 @@
     --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
+    --border-color: #292771b3;
 }
 
 /* ===== BASE & RESET ===== */
@@ -1996,12 +1997,12 @@ span{
 
 .footer-bottom-links a {
     font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.35);
+    color: var(--accent2);
     transition: var(--transition);
 }
 
 .footer-bottom-links a:hover {
-    color: var(--accent);
+    color: var(--accent2);
 }
 
 /* ===== BACK TO TOP ===== */
@@ -2680,7 +2681,7 @@ span{
     width: 56px;
     height: 56px;
     min-width: 56px;
-    background: linear-gradient(135deg, rgba(0, 184, 148, 0.1), rgba(0, 184, 148, 0.05));
+    background: linear-gradient(135deg, rgba(42, 39, 113, 0.1), rgba(237, 32, 35, 0.1));
     border-radius: var(--radius-sm);
     display: flex;
     align-items: center;
@@ -2796,7 +2797,7 @@ span{
 .stats-section .section-badge {
     background: rgba(0, 184, 148, 0.15);
     border: 1px solid rgba(0, 184, 148, 0.2);
-    color: var(--accent-light);
+    color: var(--accent);
 }
 
 .stats-section .section-title {
@@ -2826,7 +2827,7 @@ span{
 .stat-number {
     font-size: 3rem;
     font-weight: 800;
-    color: var(--accent-light);
+    color: var(--accent2);
     line-height: 1;
     margin-bottom: 10px;
 }
@@ -3071,7 +3072,7 @@ span{
     height: 48px;
     border-radius: 50%;
     object-fit: cover;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3125,7 +3126,7 @@ span{
 }
 
 .footer-brand span {
-    color: var(--accent-light);
+    color: var(--accent2);
 }
 
 .footer-desc {
@@ -3227,7 +3228,7 @@ span{
 }
 
 .footer-bottom a {
-    color: var(--accent-light);
+    color: rgba(255, 255, 255, 0.40);
 }
 
 .footer-bottom a:hover {
@@ -3266,38 +3267,7 @@ span{
     transition-delay: 0.5s;
 }
 
-/* ========== BACK TO TOP ========== */
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 46px;
-    height: 46px;
-    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-    border: none;
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    opacity: 0;
-    visibility: hidden;
-    transition: var(--transition);
-    z-index: 999;
-    box-shadow: 0 4px 15px rgba(0, 184, 148, 0.35);
-}
 
-.back-to-top.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-.back-to-top:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 25px rgba(0, 184, 148, 0.45);
-}
 
 /* ========== RESPONSIVE ========== */
 @media (max-width: 991.98px) {
@@ -3434,3 +3404,5 @@ span{
         gap: 16px;
     }
 }
+
+
