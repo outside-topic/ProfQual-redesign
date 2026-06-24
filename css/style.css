@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* ===== CSS VARIABLES ===== */
 :root {
     --primary: #2A2771;
@@ -87,7 +88,7 @@ li {
     list-style-type: none;
 }
 
-span{
+span {
     color: var(--accent2);
 }
 
@@ -143,7 +144,6 @@ span{
 .section-desc {
     font-size: 1.1rem;
     color: var(--muted);
-    max-width: 600px;
     line-height: 1.8;
 }
 
@@ -246,7 +246,8 @@ span{
     opacity: 1;
     transform: translateX(-50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    img{
+
+    img {
         border-radius: 15px;
     }
 }
@@ -260,7 +261,8 @@ span{
     opacity: 1;
     transform: translateX(50px);
     transition: opacity 0.8s ease, transform 0.8s ease;
-    img{
+
+    img {
         border-radius: 15px;
     }
 }
@@ -298,13 +300,15 @@ span{
 .navbar-toggler {
     border: 2px solid #cc0000 !important;
 }
+
 .navbar-toggler-icon {
     background-image: none !important;
     position: relative;
 }
 
 .navbar-toggler-icon::before {
-    content: "\2630"; /* hamburger icon */
+    content: "\2630";
+    /* hamburger icon */
     font-size: 28px;
     color: var(--secondary);
     position: absolute;
@@ -392,7 +396,7 @@ span{
 .nav-link-custom:hover,
 .nav-link-custom.active {
     color: var(--secondary) !important;
-    
+
 }
 
 .nav-link-custom:hover::after,
@@ -3427,37 +3431,57 @@ span{
     }
 }
 
-.cbg{
+.cbg {
     background: var(--primary);
 }
 
-.cbng{
+.cbng {
     color: var(--primary) !important;
 }
 
-.cng{
+.cng {
     background: #ed20236e;
 }
 
-.alignment{
+.alignment {
     margin: 0px auto;
 }
-.breadcrumb-item{
-    a{
+
+.breadcrumb-item {
+    a {
         color: var(--white);
         font-size: 20px !important;
         font-weight: 600;
     }
 }
-.breadcrumb-item::before{
+
+.breadcrumb-item::before {
     color: var(--white) !important;
     padding-top: 5px;
     padding-right: 25px !important;
     font-size: 20px !important;
 }
-.breadcrumb{
+
+.breadcrumb {
     padding: 15px 30px;
     background: rgba(37, 99, 235, 0.1);
     border-radius: 15px;
     border: 1px solid #2721d6;
+}
+
+
+.mod {
+    padding-left: 0px;
+
+    li {
+        a {
+            color: #0F172A;
+            i {
+                display: inline-block;
+                margin-right: 10px;
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+        }
+    }
 }
