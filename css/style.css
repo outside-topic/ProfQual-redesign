@@ -993,6 +993,14 @@ span {
     background: rgba(34, 197, 94, 0.1);
     color: var(--success);
 }
+.metric-number2{
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
 
 .metric-number {
     font-family: var(--font-heading);
@@ -2224,6 +2232,9 @@ span {
     .metric-number {
         font-size: 2.25rem;
     }
+    .metric-number2 {
+        font-size: 2.25rem;
+    }
 
     .bento-grid {
         grid-template-columns: 1fr;
@@ -2267,6 +2278,9 @@ span {
     }
 
     .metric-number {
+        font-size: 2rem;
+    }
+    .metric-number2 {
         font-size: 2rem;
     }
 
@@ -3484,4 +3498,18 @@ span {
             }
         }
     }
+}
+.section-header{
+    text-align: center;
+}
+
+.text-gradient{
+    color: var(--primary);
+}
+
+.contact_box{
+    /* border: 1px solid var(--primary); */
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 50px;
 }
