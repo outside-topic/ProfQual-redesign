@@ -4,19 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who We Are | ProfQual - Trusted Awarding Body in the UK</title>
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description"
+        content="ProfQual - UK-Based Qualification Awarding Body setting global standards in professional qualifications, accreditation, and certification.">
+    <meta name="keywords"
+        content="ProfQual, UK qualifications, awarding body, accreditation, professional certification, global recognition">
+    <meta name="author" content="ProfQual">
+    <title>ProfQual — Setting Global Standards in Professional Qualifications</title>
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="ProfQual — Setting Global Standards in Professional Qualifications">
+    <meta property="og:description"
+        content="UK-Based Qualification Awarding Body. Trusted by 2500+ centres across 120+ countries.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.profqual.org.uk">
+    <meta property="og:image" content="https://www.profqual.org.uk/og-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ProfQual — Global Professional Qualifications">
+    <meta name="twitter:description" content="UK-Based Awarding Body. 500K+ certified learners worldwide.">
+
+    <!-- CDN Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <!-- ===== NAVBAR ===== -->
     <nav class="navbar navbar-expand-lg navbar-profqual">
@@ -181,212 +204,173 @@
         </div>
     </nav>
 
-    <!-- ========== HERO SECTION ========== -->
-    <section class="hero-section cbg">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
-                    <h1 class="hero-title fade-up fade-up-delay-1 ">
-                        Who <span>Are</span> we?</h1>
+
+    <main id="main-content">
+
+        <!-- ===== HERO SECTION ===== -->
+        <section class="hero-section" id="home" aria-label="Hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-grid-pattern"></div>
+            <canvas id="heroParticles"></canvas>
+
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row align-items-center">
+                    <!-- Left Content -->
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    </div>
+                    <h1 class="hero-title reveal stagger-1 text-center pt-5 pb-5"><span>Course Accreditation</span>:
+                        Solution for Institute</h1>
                     <div class="row d-flex justify-content-center">
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                        <div class="col-12 col-sm-12 col-md-5 col-lg-5">
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb d-flex justify-content-center">
                                     <li class="breadcrumb-item me-3"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="whychooseus.html">About Us</a></li>
+                                    <li class="breadcrumb-item"><a href="coaccreditation.html">Course Accreditation</a>
+                                    </li>
                                 </ol>
                             </nav>
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
-        <!-- Decorative dots -->
-        <div class="hero-dots d-none d-lg-block">
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-        </div>
-    </section>
-
-    <!-- ========== INTRO SECTION ========== -->
-    <section class="intro-section section-padding">
-        <div class="container">
-            <div class="intro-content fade-up">
-                <h2 class="section-title">ProfQual is the name of TRUST and QUALITY</h2>
-                <p>
-                    ProfQual Is a Qualification Awarding body
-                </p>
-                <p>
-                    Popular for Quality, Affordability, and Accessibility.
-                </p>
-                <p>
-                    ProfQual is UK-based self-regulated Qualification Awarding body for higher education. ProfQual
-                    believes in Quality, affordability, and accessibility.
-                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== GLOBAL RECOGNITION ===== -->
-    <section class="recognition-section" id="about" aria-label="Global Recognition">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <!-- Globe -->
-                <div class="col-lg-5 reveal-left">
-                    <img src="images/about_img1.jpeg" class="img-fluid" alt="">
-                </div>
-
-                <!-- Content -->
-                <div class="col-lg-7 reveal-right">
-
-                    <h2 class="section-title">AWARDING BODY</h2>
-                    <p class="section-desc mb-4">
-                        ProfQual offers a wide arrangement of professionally orientated and universally perceived
-                        capabilities –, for example, business and management, law, registering and medical services,
-                        with numerous qualified for UK-subsidizing. We have, likewise, developed a range of regulatory
-                        qualifications tailored to our customers through ongoing training services.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ===== GLOBAL RECOGNITION2 ===== -->
-    <section class="recognition-section" id="about" aria-label="Global Recognition">
-        <div class="container">
-            <div class="row align-items-center g-5">
-                <!-- Content -->
-                <div class="col-lg-7 reveal-left">
-                    <h2 class="section-title">AWARDING BODY</h2>
-                    <p class="section-desc mb-4">
-                        ProfQual offers a wide arrangement of professionally orientated and universally perceived
-                        capabilities –, for example, business and management, law, registering and medical services,
-                        with numerous qualified for UK-subsidizing. We have, likewise, developed a range of regulatory
-                        qualifications tailored to our customers through ongoing training services.
-                    </p>
-                </div>
-                <!-- Globe -->
-                <div class="col-lg-5 reveal-right">
-                    <img src="images/about_img2.jpeg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== TESTIMONIALS SECTION ========== -->
-    <section class="testimonials-section section-padding-lg">
-        <div class="container">
-            <div class="section-header fade-up">
-                <div class="section-badge">
-                    <i class="bi bi-chat-quote"></i>
-                    Testimonials
-                </div>
-                <h2 class="section-title">Trusted by Centres Worldwide</h2>
-                <p class="section-subtitle">
-                    Hear from the training providers and educators who have chosen ProfQual as their awarding partner.
-                </p>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card fade-up fade-up-delay-1">
-                        <div class="testimonial-stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "Partnering with ProfQual has been transformative for our institution. Their qualification
-                            framework is rigorous yet flexible, allowing us to serve diverse learner populations
-                            effectively."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">JD</div>
-                            <div class="testimonial-author-info">
-                                <h6>Dr. James Donovan</h6>
-                                <p>Director, London Academy of Business</p>
-                            </div>
-                        </div>
+        <!-- ===== GLOBAL RECOGNITION ===== -->
+        <section class="recognition-section" id="about" aria-label="Global Recognition">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Globe -->
+                    <div class="col-lg-5 reveal-left">
+                        <img src="images/features-Photoroom.png" class="img-fluid" alt="">
                     </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card fade-up fade-up-delay-2">
-                        <div class="testimonial-stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "The support we receive from ProfQual is outstanding. From the initial approval process to
-                            ongoing quality assurance, their team is responsive, knowledgeable, and genuinely committed
-                            to our success."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">SA</div>
-                            <div class="testimonial-author-info">
-                                <h6>Sarah Al-Rashid</h6>
-                                <p>CEO, Gulf Education Partners, UAE</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="testimonial-card fade-up fade-up-delay-3">
-                        <div class="testimonial-stars">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="testimonial-text">
-                            "What impressed us most is how ProfQual balances academic rigour with practical relevance.
-                            Our learners graduate with qualifications that employers truly value and recognise."
-                        </p>
-                        <div class="testimonial-author">
-                            <div class="testimonial-avatar">MK</div>
-                            <div class="testimonial-author-info">
-                                <h6>Michael Kowalski</h6>
-                                <p>Head of Programmes, EuroCollege, Poland</p>
-                            </div>
-                        </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-7 reveal-right">
+
+                        <h2 class="section-title">Features of ProfQual Accredited Courses</h2>
+                        <ul class="mod">
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>ProfQual provides Accreditation support
+                                    towards education institute, training centre, Business School for their own
+                                    courses</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>ProfQual accreditation depends on
+                                    Industry specific curriculum, application based learning tools, Competency based
+                                    assessment tools.</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Due to UK-standard qualification,
+                                    Competency based Assessment, ProfQual accredited courses are acceptable
+                                    worldwide.</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>ProfQual accredited courses are trusted
+                                    by millions of professionals from different discipline across the globe.</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>ProfQual assures UK-standard
+                                    qualification with very affordable fees based on the motto: Standard Qualification
+                                    for all</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>All Accredited Centre or Institute by
+                                    ProfQual can increase their visibility in their own arena by providing ProfQual
+                                    accredited Course</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>OAll Accredited institutes can use the
+                                    accreditation logo for the program in promotional material and certificates</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- ===== GLOBAL RECOGNITION2 ===== -->
+        <section class="recognition-section" id="about" aria-label="Global Recognition">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Content -->
+                    <div class="col-lg-7 reveal-left">
+                        <h2 class="section-title">Areas of Accreditation by ProfQual</h2>
+                        <p class="section-desc mb-4">
+                            ProfQual has an Accreditation Board comprises of expert Curriculum Analyst from different
+                            Discipline. ProfQual accredited courses in the following aras:
+                        </p>
+                        <ul class="mod">
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Business and Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Supply Chain Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Sales and Marketing</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Finance & Accounts</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Human Resource Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Leadership and Innovation</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Strategic Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Production Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Operations Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Quality Management</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Compliance Management</a></li>
+                        </ul>
+                    </div>
+                    <!-- Globe -->
+                    <div class="col-lg-5 reveal-right">
+                        <img src="images/place.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- ========== CTA SECTION ========== -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content text-center fade-up">
-                <h2>Ready to Partner with a Leading Awarding Body?</h2>
-                <p>Join 200+ approved centres worldwide and start delivering ProfQual qualifications that make a real
-                    difference to your learners' futures.</p>
-                <div class="cta-buttons text-center">
-                    <a href="contact.html" class="btn-primary-custom me-2">
-                        Become an Approved Centre
-                        <i class="bi bi-arrow-right"></i>
+        <!-- ===== GLOBAL RECOGNITION ===== -->
+        <section class="recognition-section" id="about" aria-label="Global Recognition">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <!-- Globe -->
+                    <div class="col-lg-5 reveal-left">
+                        <img src="images/process.png" class="img-fluid" alt="">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-7 reveal-right">
+
+                        <h2 class="section-title">Process of Accreditation:</h2>
+                        <ul class="mod">
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Step-1: Become approved Centre/
+                                    Accredited Institute</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Step-2: Apply for Course
+                                    accreditation</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Step-3: Pay the fees</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Step-4: Complete the Review and
+                                    verification stage</a></li>
+                            <li><a href="#"><i class="bi bi-check2-circle"></i>Step-5: Get the accreditation of
+                                    courses</a></li>
+                        </ul>
+                        <p class="section-desc mb-4">
+                            Once Accreditation completed, ProfQual will issue certificate for accredated courses.
+                        </p>
+                        <p class="section-desc mb-4">
+                            For issuing Certificate from ProfQual, it needs to have all the questions/ assessment tools
+                            to be accredited and all scripts must be shared with ProfQual. Once the certification board
+                            is satisfied with the performance of learner, the learner will be awarded the certificate.
+                            All the records will be preserved by Centre as well as ProfQual certification unit for
+                            future reference and verification.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA SECTION ===== -->
+        <section class="cta-section" id="contact" aria-label="Call to Action">
+            <div class="container position-relative text-center" style="z-index: 2;">
+                <div class="cta-glow-line reveal"></div>
+                <h2 class="reveal stagger-1">Ready To Join A Globally Recognised Qualification Network?</h2>
+                <p class="reveal stagger-2">
+                    Take the first step towards delivering world-class qualifications. Our team is ready to guide you
+                    through the accreditation process.
+                </p>
+                <div class="cta-btns reveal stagger-3">
+                    <a href="#" class="btn-accent-lg">
+                        Become a Centre <i class="bi bi-arrow-right ms-2"></i>
                     </a>
-                    <a href="qualifications.html" class="btn-outline-custom">
-                        Browse Qualifications
-                        <i class="bi bi-grid"></i>
+                    <a href="#" class="btn-outline-light">
+                        Contact Us <i class="bi bi-envelope ms-2"></i>
                     </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </main>
 
     <!-- ===== FOOTER ===== -->
     <footer class="footer-section" role="contentinfo">
@@ -470,133 +454,21 @@
             </div>
         </div>
     </footer>
-    <!-- ========== BACK TO TOP ========== -->
+
+
+
+    <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="bi bi-chevron-up"></i>
     </button>
 
-    <!-- Bootstrap 5 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"
+        integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/custom.js"></script>
 
-    <script>
-        // ========== NAVBAR SCROLL EFFECT ==========
-        const navbar = document.getElementById('mainNav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // ========== BACK TO TOP ==========
-        const backToTop = document.getElementById('backToTop');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 400) {
-                backToTop.classList.add('show');
-            } else {
-                backToTop.classList.remove('show');
-            }
-        });
-        backToTop.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-
-        // ========== SCROLL ANIMATIONS (Intersection Observer) ==========
-        const fadeElements = document.querySelectorAll('.fade-up');
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px 0px -60px 0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        fadeElements.forEach(el => observer.observe(el));
-
-        // ========== COUNTER ANIMATION ==========
-        const statNumbers = document.querySelectorAll('.stat-number[data-target]');
-        let countersAnimated = false;
-
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !countersAnimated) {
-                    countersAnimated = true;
-                    statNumbers.forEach(counter => {
-                        const target = parseInt(counter.getAttribute('data-target'));
-                        const duration = 2000;
-                        const startTime = performance.now();
-
-                        function updateCounter(currentTime) {
-                            const elapsed = currentTime - startTime;
-                            const progress = Math.min(elapsed / duration, 1);
-                            // Ease out cubic
-                            const eased = 1 - Math.pow(1 - progress, 3);
-                            const current = Math.floor(eased * target);
-
-                            if (target >= 1000) {
-                                counter.textContent = (current / 1000).toFixed(current >= target ? 0 : 1) + 'K+';
-                                if (progress >= 1) {
-                                    counter.textContent = (target / 1000) + 'K+';
-                                }
-                            } else {
-                                counter.textContent = current + '+';
-                                if (progress >= 1) {
-                                    counter.textContent = target + '+';
-                                }
-                            }
-
-                            if (progress < 1) {
-                                requestAnimationFrame(updateCounter);
-                            }
-                        }
-
-                        requestAnimationFrame(updateCounter);
-                    });
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.3 });
-
-        if (statNumbers.length > 0) {
-            counterObserver.observe(statNumbers[0].closest('.stats-section') || statNumbers[0]);
-        }
-
-        // ========== SMOOTH SCROLL FOR ANCHOR LINKS ==========
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    const offset = 80;
-                    const top = target.getBoundingClientRect().top + window.scrollY - offset;
-                    window.scrollTo({ top, behavior: 'smooth' });
-                }
-            });
-        });
-
-        // ========== CLOSE MOBILE NAV ON CLICK ==========
-        const navLinks = document.querySelectorAll('.nav-link');
-        const navCollapse = document.getElementById('navMenu');
-        const bsCollapse = new bootstrap.Collapse(navCollapse, { toggle: false });
-
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (window.innerWidth < 992) {
-                    bsCollapse.hide();
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

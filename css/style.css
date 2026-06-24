@@ -135,7 +135,7 @@ span {
 }
 
 .section-title {
-    font-size: clamp(2rem, 4vw, 3.25rem);
+    font-size: 35px;
     font-weight: 800;
     color: var(--text);
     margin-bottom: 1rem;
@@ -3493,7 +3493,7 @@ span {
             i {
                 display: inline-block;
                 margin-right: 10px;
-                font-size: 10px;
+                font-size: 15px;
                 margin-bottom: 5px;
             }
         }
