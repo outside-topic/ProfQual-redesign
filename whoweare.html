@@ -19,19 +19,19 @@
 <body>
 
     <!-- ===== NAVBAR ===== -->
-    <nav class="navbar-profqual" id="mainNav" role="navigation" aria-label="Main navigation">
+    <nav class="navbar navbar-expand-lg navbar-profqual">
         <div class="container">
-            <div class="d-flex align-items-center justify-content-between">
-                <!-- Logo -->
-                <a class="navbar-brand-custom" href="index.html" aria-label="ProfQual Home">
-                    <img src="images/logo.png" style="width: 60px; height: 60px;" alt="ProfQual Logo">
-                </a>
-                <!-- Desktop Nav -->
-                <ul class="navbar-nav-desktop d-none d-lg-flex align-items-center gap-1">
-                    <li class="nav-item">
-                        <a class="nav-link-custom active" href="index.html">Home</a>
+            <a class="navbar-brand" href="#"><img src="images/logo.png" style="width: 60px; height: 60px;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-custom active" aria-current="page" href="#">Home</a>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -54,21 +54,20 @@
                             </a>
                         </div>
                     </li>
-
                     <li class="nav-item dropdown">
                         <a class="nav-link-custom dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Qualification
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item-mega" href="#profqual-qual">
+                            <a class="dropdown-item-mega" href="index.html">
                                 <div class="mega-icon"><i class="bi bi-journal-check"></i></div>
                                 <div class="mega-content">
                                     <span class="mega-title">ProfQual Qualification</span>
                                     <span class="mega-desc">Explore our standard qualifications.</span>
                                 </div>
                             </a>
-                            <a class="dropdown-item-mega" href="#bespoke-qual">
+                            <a class="dropdown-item-mega" href="./bespoqual.html">
                                 <div class="mega-icon"><i class="bi bi-sliders"></i></div>
                                 <div class="mega-content">
                                     <span class="mega-title">Bespoke Qualification Service</span>
@@ -172,93 +171,16 @@
                         </div>
                     </li>
                 </ul>
-
                 <!-- CTA + Mobile Toggle -->
                 <div class="d-flex align-items-center gap-3">
                     <a href="#contact" class="navbar-cta d-none d-md-inline-flex">
-                        Get Accredited
-                    </a>
-                    <button class="d-lg-none bg-transparent text-white fs-4 custom" type="button"
-                        data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-label="Toggle navigation">
-                        <i class="bi bi-list"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Mobile Offcanvas -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-            <div class="offcanvas-header">
-                <span class="navbar-brand-custom text-white">ProfQual</span>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <div class="d-flex flex-column">
-
-                    <a class="mobile-nav-link active" href="#home" data-bs-dismiss="offcanvas">Home</a>
-
-                    <!-- About Us Accordion -->
-                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileAbout" role="button"
-                        aria-expanded="false" aria-controls="mobileAbout">
-                        About Us <i class="bi bi-chevron-down mobile-chevron"></i>
-                    </a>
-                    <div class="collapse mobile-submenu" id="mobileAbout">
-                        <a href="#why-us" data-bs-dismiss="offcanvas">Why Us</a>
-                        <a href="#who-we-are" data-bs-dismiss="offcanvas">Who We Are</a>
-                    </div>
-
-                    <!-- Qualification Accordion -->
-                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileQual" role="button"
-                        aria-expanded="false" aria-controls="mobileQual">
-                        Qualification <i class="bi bi-chevron-down mobile-chevron"></i>
-                    </a>
-                    <div class="collapse mobile-submenu" id="mobileQual">
-                        <a href="#profqual-qual" data-bs-dismiss="offcanvas">ProfQual Qualification</a>
-                        <a href="#bespoke-qual" data-bs-dismiss="offcanvas">Bespoke Qualification Service</a>
-                        <a href="#course-accreditation" data-bs-dismiss="offcanvas">Course Accreditation</a>
-                    </div>
-
-                    <!-- Centre Accordion -->
-                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileCentre" role="button"
-                        aria-expanded="false" aria-controls="mobileCentre">
-                        Centre <i class="bi bi-chevron-down mobile-chevron"></i>
-                    </a>
-                    <div class="collapse mobile-submenu" id="mobileCentre">
-                        <a href="#centre-profqual" data-bs-dismiss="offcanvas">ProfQual Qualification</a>
-                        <a href="#centre-bespoke" data-bs-dismiss="offcanvas">Bespoke Qualification Service</a>
-                        <a href="#centre-accreditation" data-bs-dismiss="offcanvas">Course Accreditation</a>
-                    </div>
-
-                    <!-- Learners Accordion -->
-                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileLearners" role="button"
-                        aria-expanded="false" aria-controls="mobileLearners">
-                        Learners <i class="bi bi-chevron-down mobile-chevron"></i>
-                    </a>
-                    <div class="collapse mobile-submenu" id="mobileLearners">
-                        <a href="#learner-info" data-bs-dismiss="offcanvas">Information for Learners</a>
-                    </div>
-
-                    <a class="mobile-nav-link" href="#contact" data-bs-dismiss="offcanvas">Contact</a>
-
-                    <!-- Verify Accordion -->
-                    <a class="mobile-nav-link" data-bs-toggle="collapse" href="#mobileVerify" role="button"
-                        aria-expanded="false" aria-controls="mobileVerify">
-                        Verify <i class="bi bi-chevron-down mobile-chevron"></i>
-                    </a>
-                    <div class="collapse mobile-submenu" id="mobileVerify">
-                        <a href="#verify-1" data-bs-dismiss="offcanvas">Verify Certificate</a>
-                        <a href="#verify-2" data-bs-dismiss="offcanvas">Verify Certificate</a>
-                        <a href="#verify-3" data-bs-dismiss="offcanvas">Verify Certificate</a>
-                        <a href="#verify-4" data-bs-dismiss="offcanvas">Verify Certificate</a>
-                    </div>
-
-                    <a href="#contact" class="navbar-cta mt-4" data-bs-dismiss="offcanvas">
                         Get Accredited
                     </a>
                 </div>
             </div>
         </div>
     </nav>
+
 
     <!-- ========== HERO SECTION ========== -->
     <section class="hero-section cbg">

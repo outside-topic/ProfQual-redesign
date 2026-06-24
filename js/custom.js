@@ -4,17 +4,21 @@ const backToTop = document.getElementById('backToTop');
 
 function handleScroll() {
     const scrollY = window.scrollY;
-    // Navbar
-    if (scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+
+    if (navbar) {
+        if (scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
     }
-    // Back to top
-    if (scrollY > 500) {
-        backToTop.classList.add('visible');
-    } else {
-        backToTop.classList.remove('visible');
+
+    if (backToTop) {
+        if (scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
     }
 }
 
@@ -24,7 +28,6 @@ handleScroll();
 backToTop.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-
 /* ===== SMOOTH SCROLL FOR ANCHOR LINKS ===== */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -233,13 +236,13 @@ function updateCarousel() {
     showPage(currentPage);
 }
 
-if(prevBtn){
+if (prevBtn) {
     prevBtn.addEventListener('click', () => {
         showPage(currentPage - 1);
     });
 }
 
-if(nextBtn){
+if (nextBtn) {
 
     nextBtn.addEventListener('click', () => {
         showPage(currentPage + 1);
@@ -354,6 +357,28 @@ new Swiper('.testimonialSwiper', {
         },
         992: {
             slidesPerView: 3,
+        }
+    },
+});
+new Swiper('.feedbackSwiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 1,
+        },
+        992: {
+            slidesPerView: 1,
         }
     },
 });
