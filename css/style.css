@@ -659,6 +659,14 @@ span {
     margin-bottom: 1.5rem;
     letter-spacing: -0.02em;
 }
+.hero-title2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--white);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -0.02em;
+}
 
 .hero-title .highlight {
     /* background: linear-gradient(135deg, var(--secondary),  var(--accent)); */
