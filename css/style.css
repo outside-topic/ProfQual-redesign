@@ -3635,3 +3635,8 @@ span {
         background: var(--accent);
     }
 }
+.app_box{
+    border: 1px solid var(--primary);
+    padding: 25px;
+    border-radius: 20px;
+}
