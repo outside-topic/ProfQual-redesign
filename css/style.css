@@ -1001,14 +1001,7 @@ span {
     color: var(--success);
 }
 
-.metric-number2 {
-    font-family: var(--font-heading);
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: var(--primary);
-    line-height: 1;
-    margin-bottom: 0.5rem;
-}
+
 
 .metric-number {
     font-family: var(--font-heading);
@@ -3617,4 +3610,26 @@ span {
     font-size: 1rem;
     color: var(--muted);
     line-height: 1.8;
+}
+
+.acc-card{
+    padding: 10px 20px;
+}
+
+.metric-number2 {
+    /* font-family: var(--font-heading); */
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--white);
+    padding: 10px 20px;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    background: rgba(37, 99, 235, 0.1);
+    padding: 20px 20px;
+    border-radius: 50px;
+    i{
+        padding: 5px 7px;
+        border-radius: 50px;
+        background: var(--accent);
+    }
 }
