@@ -3489,25 +3489,7 @@ span {
 }
 
 
-.mod {
-    padding-left: 0px;
 
-    li {
-        padding: 20px;
-        margin-bottom: 10px;
-        border: 1px solid var(--accent);
-        border-radius: 20px;
-        a {
-            color: #0F172A;
-            font-weight: 600;
-            font-size: 16px;
-            span{
-                color: var(--primary);
-                font-size: 22px;
-            }
-        }
-    }
-}
 
 .section-header {
     text-align: center;
@@ -3596,9 +3578,9 @@ span {
     }
 }
 
-.left_stiky{
-    position: sticky ;
-    top: 100px ;
+.left_stiky {
+    position: sticky;
+    top: 100px;
     left: 0px;
 }
 
@@ -3608,13 +3590,14 @@ span {
     color: var(--primary);
     margin-bottom: 1rem;
 }
+
 .section-desc2 {
     font-size: 1rem;
     color: var(--muted);
     line-height: 1.8;
 }
 
-.acc-card{
+.acc-card {
     padding: 10px 20px;
 }
 
@@ -3629,14 +3612,30 @@ span {
     background: rgba(37, 99, 235, 0.1);
     padding: 20px 20px;
     border-radius: 50px;
-    i{
+
+    i {
         padding: 5px 7px;
         border-radius: 50px;
         background: var(--accent);
     }
 }
-.app_box{
+
+.app_box {
     border: 1px solid var(--primary);
     padding: 25px;
     border-radius: 20px;
+}
+
+.app_box2 {
+    border: 1px solid var(--primary);
+    padding: 25px;
+    border-radius: 20px;
+    h3{
+        color: var(--primary);
+    }
+    p{
+        color: var(--primary);
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
