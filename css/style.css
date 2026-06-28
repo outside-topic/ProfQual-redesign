@@ -2239,6 +2239,7 @@ span {
     .metric-number2 {
         font-size: 2.25rem;
     }
+
     .metric-number3 {
         font-size: 2.25rem;
     }
@@ -2291,6 +2292,7 @@ span {
     .metric-number2 {
         font-size: 2rem;
     }
+
     .metric-number3 {
         font-size: 2rem;
     }
@@ -3625,6 +3627,7 @@ span {
         background: var(--accent);
     }
 }
+
 .metric-number3 {
     /* font-family: var(--font-heading); */
     font-size: 1rem;
@@ -3638,7 +3641,7 @@ span {
     border-radius: 50px;
 
     i {
-        padding: 10px;
+        padding: 10px 13px;
         border-radius: 50px;
         background: rgba(255, 255, 255, 1);
     }
@@ -3654,12 +3657,49 @@ span {
     border: 1px solid var(--primary);
     padding: 25px;
     border-radius: 20px;
-    h3{
+
+    h3 {
         color: var(--primary);
     }
-    p{
+
+    p {
         color: var(--primary);
         font-size: 16px;
         font-weight: 500;
     }
+}
+
+.accordion-body {
+    h3 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+}
+
+.accordion .accordion-button:focus{
+    border: 0px;
+    box-shadow: none;
+}
+.accordion-button{
+    font-weight: 600;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+
+}
+.custom-accordion{
+    border-radius: 25px !important;
+}
+
+.bi-gc{
+    color: var(--success);
+    font-size: 20px;
+    margin-right: 7px;
+}
+.boxy{
+    padding: 20px;
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-lg);
+    margin-bottom: 25px;
 }
