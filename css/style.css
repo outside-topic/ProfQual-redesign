@@ -3677,29 +3677,92 @@ span {
 
 }
 
-.accordion .accordion-button:focus{
+.accordion .accordion-button:focus {
     border: 0px;
     box-shadow: none;
 }
-.accordion-button{
+
+.accordion-button {
     font-weight: 600;
 }
+
 .accordion-button:not(.collapsed) {
     background-color: #fff;
 
 }
-.custom-accordion{
+
+.custom-accordion {
     border-radius: 25px !important;
 }
 
-.bi-gc{
+.bi-gc {
     color: var(--success);
     font-size: 20px;
     margin-right: 7px;
 }
-.boxy{
+
+.boxy {
     padding: 20px;
     border: 1px solid var(--primary);
     border-radius: var(--radius-lg);
     margin-bottom: 25px;
+
+    i{
+        padding: 10px;
+        background-color: var(--danger);
+        border-radius: 50px;
+        font-size: 25px;
+    }
+}
+
+.main_side{
+    position: relative;
+}
+
+.main_side::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    width: 2px;
+    height: 800px;
+
+    background: #00000014;
+}
+.main_side2{
+    position: relative;
+}
+
+.main_side2::before {
+    content: "";
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    width: 2px;
+    height: 480px;
+
+    background: #00000014;
+}
+
+
+.numbers {
+    background-color: #ffffff !important;
+    p {
+        border-radius: 100px;
+        background: var(--white);
+        padding: 14px 18px;
+        border: 1px solid var(--primary);
+        margin-bottom: 50px;
+        display: inline-block;
+        
+    }
+
+}
+
+
+.texts {
+    p {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
 }
