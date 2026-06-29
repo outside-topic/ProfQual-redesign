@@ -3726,8 +3726,12 @@ span {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #fff;
+    background-color: #ed202397;
+    color: var(--white);
 
+}
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0) invert(1);
 }
 
 .custom-accordion {
@@ -4358,4 +4362,13 @@ span {
 .padding_100{
     height: 100vh;
     padding-top: 220px;
+}
+
+
+.accordion-item{
+    border-radius:20px !important;
+    overflow:hidden;
+}
+.accordion-button{
+    padding:22px 28px;
 }
