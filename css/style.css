@@ -495,6 +495,11 @@ span {
     animation: fadeInDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+.navbar .dropdown-menu{
+    left: auto !important;
+    right: 0 !important;
+}
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -1438,6 +1443,18 @@ span {
     background: var(--accent);
     border-radius: 10px;
     z-index: -20;
+}
+.process-line2 {
+    position: absolute;
+    top: 60px;
+    left: 12%;
+    right: 10%;
+    height: 3px;
+    width: 700px;
+    /* background: rgba(0, 0, 0, 0.06); */
+    background: var(--accent);
+    border-radius: 10px;
+    z-index: 0;
 }
 
 .process-line-fill {
