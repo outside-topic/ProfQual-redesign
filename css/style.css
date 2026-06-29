@@ -26,7 +26,36 @@
     --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     --font-heading: 'Poppins', sans-serif;
     --border-color: #292771b3;
+    --primary-rgb: 0, 69, 134;
+    --primary-light: #0062b8;
+    --primary-dark: #003260;
+
+    --accent-rgb: 204, 0, 0;
+    --bg-start: #f6f8fb;
+    --bg-mid: #edf1f7;
+    --bg-end: #f0f3f8;
+    --card-bg: rgba(255, 255, 255, 0.72);
+    --card-bg-hover: rgba(255, 255, 255, 0.82);
+    --input-bg: rgba(255, 255, 255, 0.88);
+    --input-bg-focus: #ffffff;
+    --text: #111827;
+    --text-secondary: #374151;
+    --border-subtle: rgba(0, 69, 134, 0.08);
+    --shadow-rest: 0 4px 6px -1px rgba(var(--primary-rgb), 0.05),
+        0 12px 28px -8px rgba(var(--primary-rgb), 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    --shadow-hover: 0 8px 16px -2px rgba(var(--primary-rgb), 0.08),
+        0 24px 48px -12px rgba(var(--primary-rgb), 0.14),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    --shadow-focus: 0 8px 16px -2px rgba(var(--primary-rgb), 0.1),
+        0 24px 48px -12px rgba(var(--primary-rgb), 0.18),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    --radius-card: 24px;
+    --radius-input: 18px;
+    --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
 
 /* ===== BASE & RESET ===== */
 
@@ -3143,7 +3172,7 @@ span {
 
 .testimonial-author-info p {
     font-size: 0.82rem;
-    color: var(--text-muted);
+    color: var(--muted);
     margin: 0;
 }
 
@@ -3707,7 +3736,7 @@ span {
     border-radius: var(--radius-lg);
     margin-bottom: 25px;
 
-    i{
+    i {
         padding: 10px;
         background-color: var(--danger);
         border-radius: 50px;
@@ -3715,7 +3744,7 @@ span {
     }
 }
 
-.main_side{
+.main_side {
     position: relative;
 }
 
@@ -3729,7 +3758,8 @@ span {
 
     background: #00000014;
 }
-.main_side2{
+
+.main_side2 {
     position: relative;
 }
 
@@ -3747,6 +3777,7 @@ span {
 
 .numbers {
     background-color: #ffffff !important;
+
     p {
         border-radius: 100px;
         background: var(--white);
@@ -3754,7 +3785,7 @@ span {
         border: 1px solid var(--primary);
         margin-bottom: 50px;
         display: inline-block;
-        
+
     }
 
 }
@@ -3765,4 +3796,556 @@ span {
         margin-left: 30px;
         margin-top: 10px;
     }
+}
+
+
+
+
+
+
+/* Search box start */
+
+
+
+
+
+
+
+/* ============================================
+           Search Card — Glassmorphism Container
+        ============================================ */
+.search-card {
+    position: relative;
+    background: var(--card-bg);
+    backdrop-filter: blur(24px) saturate(1.4);
+    -webkit-backdrop-filter: blur(24px) saturate(1.4);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    border-radius: var(--radius-card);
+    padding: 10px;
+    box-shadow: var(--shadow-rest);
+    transition:
+        box-shadow var(--transition-smooth),
+        background var(--transition-smooth),
+        transform var(--transition-smooth);
+    animation: fadeSlideUp 0.7s 0.24s var(--transition-smooth) both;
+    z-index: 1;
+}
+
+.search-card:hover {
+    background: var(--card-bg-hover);
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-3px);
+}
+
+.search-card.is-focused {
+    background: var(--card-bg-hover);
+    box-shadow: var(--shadow-focus);
+    transform: translateY(-3px);
+}
+
+/* Subtle top accent line on focus */
+.search-card::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 15%;
+    right: 15%;
+    height: 3px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--primary) 30%,
+            var(--accent) 70%,
+            transparent);
+    border-radius: 0 0 4px 4px;
+    opacity: 0;
+    transition: opacity var(--transition-smooth), left var(--transition-smooth), right var(--transition-smooth);
+}
+
+.search-card.is-focused::before {
+    opacity: 1;
+    left: 10%;
+    right: 10%;
+}
+
+/* ============================================
+           Search Wrapper — Flex Row
+        ============================================ */
+.search-wrapper {
+    display: flex;
+    align-items: stretch;
+    border-radius: var(--radius-input);
+    overflow: hidden;
+}
+
+/* ============================================
+           Search Input Container
+        ============================================ */
+.search-input-container {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--input-bg);
+    padding: 0 12px 0 20px;
+    border: 2px solid transparent;
+    border-radius: var(--radius-input) 0 0 var(--radius-input);
+    transition:
+        background var(--transition-smooth),
+        border-color var(--transition-smooth),
+        box-shadow var(--transition-smooth);
+}
+
+.search-wrapper:focus-within .search-input-container {
+    background: var(--input-bg-focus);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 5px rgba(var(--primary-rgb), 0.08);
+}
+
+/* ============================================
+           Search Icon
+        ============================================ */
+.search-icon {
+    font-size: 1.25rem;
+    color: var(--muted);
+    flex-shrink: 0;
+    transition:
+        color var(--transition-smooth),
+        transform var(--transition-bounce);
+    animation: iconBreathe 3s ease-in-out infinite;
+}
+
+.search-wrapper:focus-within .search-icon {
+    color: var(--primary);
+    transform: scale(1.15);
+    animation: none;
+}
+
+@keyframes iconBreathe {
+
+    0%,
+    100% {
+        opacity: 0.45;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(1.04);
+    }
+}
+
+/* ============================================
+           Search Input
+        ============================================ */
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 20px 14px;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    color: var(--text);
+    font-family: inherit;
+    line-height: 1.4;
+    caret-color: var(--primary);
+}
+
+.search-input::placeholder {
+    color: transparent;
+}
+
+
+/* ============================================
+           Floating Label
+        ============================================ */
+.floating-label {
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    font-size: 1.0625rem;
+    font-weight: 400;
+    pointer-events: none;
+    transition:
+        top 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        font-size 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        font-weight 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: left center;
+    white-space: nowrap;
+}
+
+.floating-label {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity .25s ease, visibility .25s ease;
+}
+
+.search-input:focus~.floating-label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-input:not(:placeholder-shown)~.floating-label {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* ============================================
+           Clear Button
+        ============================================ */
+.clear-btn {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.5) rotate(-90deg);
+    transition:
+        opacity 220ms ease,
+        transform 220ms var(--transition-bounce),
+        background 200ms ease,
+        color 200ms ease;
+    pointer-events: none;
+}
+
+.search-input:not(:placeholder-shown)~.clear-btn {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    pointer-events: auto;
+}
+
+.clear-btn:hover {
+    background: rgba(var(--accent-rgb), 0.08);
+    color: var(--accent);
+}
+
+.clear-btn:active {
+    transform: scale(0.88);
+}
+
+/* ============================================
+           Search Button
+        ============================================ */
+.search-btn {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 34px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border: none;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    cursor: pointer;
+    border-radius: 0 var(--radius-input) var(--radius-input) 0;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    transition:
+        background var(--transition-smooth),
+        box-shadow var(--transition-smooth),
+        transform 150ms ease;
+}
+
+.search-btn:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    box-shadow:
+        0 6px 20px rgba(var(--primary-rgb), 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.search-btn:active {
+    transform: scale(0.96);
+    box-shadow:
+        0 2px 8px rgba(var(--primary-rgb), 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.search-btn:focus-visible {
+    outline: 3px solid rgba(var(--primary-rgb), 0.4);
+    outline-offset: -3px;
+}
+
+.search-btn .btn-icon {
+    font-size: 1.1rem;
+    transition: transform var(--transition-smooth);
+}
+
+.search-btn:hover .btn-icon {
+    transform: translateX(5px);
+}
+
+/* Ripple Effect */
+.ripple {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(0);
+    animation: rippleExpand 600ms ease-out forwards;
+    pointer-events: none;
+}
+
+@keyframes rippleExpand {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+/* Button subtle shine */
+.search-btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.08),
+            transparent);
+    transition: left 500ms ease;
+}
+
+.search-btn:hover::after {
+    left: 120%;
+}
+
+.btn-text {
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+/* ============================================
+           Responsive Adjustments
+        ============================================ */
+@media (max-width: 991.98px) {
+    .search-heading {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .search-hero {
+        padding: 50px 0 40px;
+    }
+
+    .search-heading {
+        font-size: 1.8rem;
+        letter-spacing: -0.025em;
+    }
+
+    .search-subheading {
+        font-size: 0.975rem;
+    }
+
+    .search-card {
+        padding: 8px;
+        border-radius: 20px;
+    }
+
+    .search-input-container {
+        padding: 0 10px 0 16px;
+    }
+
+    .search-input {
+        padding: 18px 10px;
+        font-size: 1rem;
+    }
+
+    .floating-label {
+        left: 46px;
+        font-size: 1rem;
+    }
+
+    .search-btn {
+        padding: 0 24px;
+        border-radius: 0 16px 16px 0;
+    }
+
+    .search-btn .btn-text {
+        display: none;
+    }
+
+    .search-btn .btn-icon {
+        font-size: 1.25rem;
+    }
+
+    .quick-tag-btn {
+        padding: 6px 14px;
+        font-size: 0.78rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .search-heading {
+        font-size: 1.55rem;
+    }
+
+    .search-subheading {
+        font-size: 0.9rem;
+    }
+
+    .stats-row {
+        display: none !important;
+    }
+
+    .search-btn {
+        width: 64px;
+        min-width: 64px;
+        padding: 0;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .search-btn .btn-icon {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 430px) {
+    .search-heading {
+        font-size: 1.55rem;
+    }
+
+    .search-subheading {
+        font-size: 0.9rem;
+    }
+
+    .stats-row {
+        display: none !important;
+    }
+
+    .search-btn {
+        width: 64px;
+        min-width: 64px;
+        padding: 0;
+    }
+
+    .btn-text {
+        display: none;
+    }
+
+    .search-btn .btn-icon {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+}
+
+/* ==========================================
+   Mobile (420px and below)
+========================================== */
+
+@media (max-width: 420px) {
+
+    .search-card{
+        padding: 6px;
+    }
+
+    .search-input-container{
+        min-width: 0;
+        padding: 0 8px 0 14px;
+    }
+
+    .search-input{
+        padding: 14px 10px;
+        font-size: 0.9rem;
+    }
+
+    .floating-label{
+        left: 42px;
+        font-size: 0.9rem;
+        max-width: 160px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .search-icon{
+        font-size: 1rem;
+    }
+
+    .search-btn{
+        width: 52px;
+        min-width: 52px;
+        padding: 0;
+        border-radius: 0 var(--radius-input) var(--radius-input) 0;
+    }
+
+    .btn-text{
+        display: none;
+    }
+
+    .search-btn .btn-icon{
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .clear-btn{
+        width: 28px;
+        height: 28px;
+        font-size: 0.75rem;
+    }
+
+}
+
+
+
+/* ============================================
+           Accessibility — Reduced Motion
+        ============================================ */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    .search-card,
+    .search-heading,
+    .search-subheading,
+    .search-card,
+    .quick-tags,
+    .stats-row {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+/* Search box end */
+
+
+
+
+.padding_100{
+    height: 100vh;
+    padding-top: 220px;
 }
