@@ -689,7 +689,7 @@ span {
     letter-spacing: -0.02em;
 }
 
-.red_fix{
+.red_fix {
     font-size: clamp(2.5rem, 5.5vw, 4.25rem);
     font-weight: 800;
     color: #E63946;
@@ -3721,6 +3721,17 @@ span {
     box-shadow: none;
 }
 
+.accordion-item {
+    border-radius: 20px !important;
+    overflow: hidden;
+    border: 2px solid #00000029;
+}
+
+.accordion-button {
+    padding: 22px 28px;
+}
+
+
 .accordion-button {
     font-weight: 600;
 }
@@ -3730,7 +3741,8 @@ span {
     color: var(--white);
 
 }
-.accordion-button:not(.collapsed)::after{
+
+.accordion-button:not(.collapsed)::after {
     filter: brightness(0) invert(1);
 }
 
@@ -3769,7 +3781,7 @@ span {
     top: 0px;
     width: 2px;
     height: 800px;
-    z-index:-50;
+    z-index: -50;
     background: #00000014;
 }
 
@@ -3784,13 +3796,13 @@ span {
     top: 0px;
     width: 2px;
     height: 480px;
-    z-index:-50;
+    z-index: -50;
     background: #00000014;
 }
 
 
 .numbers {
-   
+
 
     p {
         border-radius: 100px;
@@ -4241,6 +4253,7 @@ span {
         font-size: 1.2rem;
     }
 }
+
 @media (max-width: 430px) {
     .search-heading {
         font-size: 1.55rem;
@@ -4276,21 +4289,21 @@ span {
 
 @media (max-width: 420px) {
 
-    .search-card{
+    .search-card {
         padding: 6px;
     }
 
-    .search-input-container{
+    .search-input-container {
         min-width: 0;
         padding: 0 8px 0 14px;
     }
 
-    .search-input{
+    .search-input {
         padding: 14px 10px;
         font-size: 0.9rem;
     }
 
-    .floating-label{
+    .floating-label {
         left: 42px;
         font-size: 0.9rem;
         max-width: 160px;
@@ -4299,27 +4312,27 @@ span {
         text-overflow: ellipsis;
     }
 
-    .search-icon{
+    .search-icon {
         font-size: 1rem;
     }
 
-    .search-btn{
+    .search-btn {
         width: 52px;
         min-width: 52px;
         padding: 0;
         border-radius: 0 var(--radius-input) var(--radius-input) 0;
     }
 
-    .btn-text{
+    .btn-text {
         display: none;
     }
 
-    .search-btn .btn-icon{
+    .search-btn .btn-icon {
         font-size: 1rem;
         margin: 0;
     }
 
-    .clear-btn{
+    .clear-btn {
         width: 28px;
         height: 28px;
         font-size: 0.75rem;
@@ -4359,16 +4372,7 @@ span {
 
 
 
-.padding_100{
+.padding_100 {
     height: 100vh;
     padding-top: 220px;
-}
-
-
-.accordion-item{
-    border-radius:20px !important;
-    overflow:hidden;
-}
-.accordion-button{
-    padding:22px 28px;
 }
