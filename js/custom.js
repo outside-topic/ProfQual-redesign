@@ -404,8 +404,3 @@ new Swiper('.featureswiper', {
         }
     },
 });
-
-
-
-
-
