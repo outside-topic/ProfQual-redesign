@@ -3765,7 +3765,7 @@ span {
     top: 0px;
     width: 2px;
     height: 800px;
-
+    z-index:-50;
     background: #00000014;
 }
 
@@ -3780,13 +3780,13 @@ span {
     top: 0px;
     width: 2px;
     height: 480px;
-
+    z-index:-50;
     background: #00000014;
 }
 
 
 .numbers {
-    background-color: #ffffff !important;
+   
 
     p {
         border-radius: 100px;
@@ -3795,7 +3795,7 @@ span {
         border: 1px solid var(--primary);
         margin-bottom: 50px;
         display: inline-block;
-
+        background-color: #fff !important;
     }
 
 }
